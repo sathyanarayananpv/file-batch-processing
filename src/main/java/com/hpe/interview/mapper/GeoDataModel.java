@@ -1,12 +1,12 @@
-package com.hpe.interview.model;
+package com.hpe.interview.mapper;
 
 public class GeoDataModel {
 
 	private String anzsic06;
 	private String area;
 	private String year;
-	private int geo_count; // using the same name as column name
-	private int ec_count; // using the same name as column name
+	private int geoCount;
+	private int ecCount;
 
 	public String getAnzsic06() {
 		return anzsic06;
@@ -32,20 +32,20 @@ public class GeoDataModel {
 		this.year = year;
 	}
 
-	public int getGeo_count() {
-		return geo_count;
+	public int getGeoCount() {
+		return geoCount;
 	}
 
-	public void setGeo_count(int geo_count) {
-		this.geo_count = geo_count;
+	public void setGeoCount(int geoCount) {
+		this.geoCount = geoCount;
 	}
 
-	public int getEc_count() {
-		return ec_count;
+	public int getEcCount() {
+		return ecCount;
 	}
 
-	public void setEc_count(int ec_count) {
-		this.ec_count = ec_count;
+	public void setEcCount(int ecCount) {
+		this.ecCount = ecCount;
 	}
 
 }

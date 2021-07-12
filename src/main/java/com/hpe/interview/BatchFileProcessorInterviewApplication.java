@@ -15,15 +15,15 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
  */
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class })
-public class FileProcessorInterviewApplication {
-	private static Logger logger = LoggerFactory.getLogger(FileProcessorInterviewApplication.class);
+public class BatchFileProcessorInterviewApplication {
+	private static Logger logger = LoggerFactory.getLogger(BatchFileProcessorInterviewApplication.class);
 
 	/**
 	 * @param args - Command Arguments if any
 	 */
 	public static void main(String[] args) {
-		logger.info("Starting File Processing application :: FileProcessorInterviewApplication:main()");
-		SpringApplication.run(FileProcessorInterviewApplication.class, args);
+		logger.info("Starting File Processing application...");
+		SpringApplication.run(BatchFileProcessorInterviewApplication.class, args);
 	}
 
 }

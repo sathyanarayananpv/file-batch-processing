@@ -1,4 +1,4 @@
-package com.hpe.interview.writers;
+package com.hpe.interview.custom.writers;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.StepExecution;
 
-import com.hpe.interview.config.FileProcessorConstants;
-import com.hpe.interview.model.GeoDataModel;
+import com.hpe.interview.constants.BatchFileConstants;
+import com.hpe.interview.mapper.GeoDataModel;
 
 /**
  * CommonFlatFileWriter - Takes input parameter i.e delimiter & filename for
@@ -19,14 +19,14 @@ import com.hpe.interview.model.GeoDataModel;
  * @author sathy
  *
  */
-public class CommonFlatFileWriter implements CustomItemWriter {
-	private static Logger logger = LoggerFactory.getLogger(CommonFlatFileWriter.class);
+public class CommonFlatFileWriterImpl implements CustomItemWriter {
+	private static Logger logger = LoggerFactory.getLogger(CommonFlatFileWriterImpl.class);
 	FileWriter writer;
 	String delimiter = null;
 	String fileName = null;
 	int counter = 0;
 
-	public CommonFlatFileWriter(String delimiter, String fileName, String outputFolderAndPrefix) {
+	public CommonFlatFileWriterImpl(String delimiter, String fileName, String outputFolderAndPrefix) {
 		super();
 		this.delimiter = delimiter;
 		this.fileName = outputFolderAndPrefix + fileName;
@@ -40,8 +40,9 @@ public class CommonFlatFileWriter implements CustomItemWriter {
 	public void beforeStep(StepExecution stepExecution) {
 		try {
 			writer = new FileWriter(fileName);
-			logger.debug("beforeStep CommonFlatFileWriter::" + fileName + " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-			writer.write(String.join(delimiter, FileProcessorConstants.colNames));
+			logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Job Step Started("+fileName+") for ::" + stepExecution.getJobExecutionId()
+			+ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+			writer.write(String.join(delimiter, BatchFileConstants.colNames));
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			closeResource();
@@ -59,8 +60,9 @@ public class CommonFlatFileWriter implements CustomItemWriter {
 			writer.write("\n" + (items.stream()
 					.map(item -> String.valueOf((new StringBuffer().append(item.getAnzsic06()).append(delimiter)
 							.append(item.getArea()).append(delimiter).append(item.getYear()).append(delimiter)
-							.append(item.getGeo_count()).append(delimiter).append(item.getEc_count())).toString()))
+							.append(item.getGeoCount()).append(delimiter).append(item.getEcCount())).toString()))
 					.collect(Collectors.joining("\n"))));
+			writer.flush();;
 		} catch (IOException e) {
 			logger.error(e.getMessage());
 			closeResource();
@@ -84,12 +86,11 @@ public class CommonFlatFileWriter implements CustomItemWriter {
 			closeResource();
 			throw new RuntimeException(e.getMessage());
 		}
-		logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Job Step Completed for ::" + stepExecution.getJobExecutionId()
-				+ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Job Step Completed("+fileName+") for ::" + stepExecution.getJobExecutionId()
+		+ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 	}
 
 	public void closeResource() {
-
 		if (null != writer) {
 			try {
 				writer.close();

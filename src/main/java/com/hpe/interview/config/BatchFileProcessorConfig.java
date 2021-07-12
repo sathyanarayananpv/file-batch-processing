@@ -1,8 +1,9 @@
 package com.hpe.interview.config;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,10 +26,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.oxm.xstream.XStreamMarshaller;
 
-import com.hpe.interview.model.GeoDataModel;
-import com.hpe.interview.writers.CommonFlatFileWriter;
-import com.hpe.interview.writers.ExcelWriter;
-import com.hpe.interview.writers.CustomItemWriter;
+import com.hpe.interview.constants.BatchFileConstants;
+import com.hpe.interview.custom.writers.CommonFlatFileWriterImpl;
+import com.hpe.interview.custom.writers.CustomItemWriter;
+import com.hpe.interview.custom.writers.ExcelWriterImpl;
+import com.hpe.interview.custom.writers.factory.FileWriterFactory;
+import com.hpe.interview.mapper.GeoDataModel;
 
 /**
  * 
@@ -38,10 +41,9 @@ import com.hpe.interview.writers.CustomItemWriter;
  */
 @Configuration
 @EnableBatchProcessing
-public class FileBatchProcessorConfig {
+public class BatchFileProcessorConfig {
 
-	private static Logger logger = LoggerFactory.getLogger(FileBatchProcessorConfig.class);
-	private static final int CHUNK_SIZE = 1000;
+	private static Logger logger = LoggerFactory.getLogger(BatchFileProcessorConfig.class);
 
 	// Job Bean
 	@Bean
@@ -55,8 +57,9 @@ public class FileBatchProcessorConfig {
 	public Step step(StepBuilderFactory stepBuilderFactory, CompositeItemWriter<GeoDataModel> compositeWriter,
 			FlatFileItemReader<GeoDataModel> reader, CustomItemWriter excelWriter, CustomItemWriter tabSeparatedText,
 			CustomItemWriter tabSeparatedCsv) {
-		return stepBuilderFactory.get("step").<GeoDataModel, GeoDataModel>chunk(CHUNK_SIZE).reader(reader)
-				.writer(compositeWriter).listener(excelWriter).listener(tabSeparatedText).listener(tabSeparatedCsv)
+		return stepBuilderFactory.get("step").<GeoDataModel, GeoDataModel>chunk(BatchFileConstants.CHUNK_SIZE)
+				.reader(reader).writer(compositeWriter).listener(excelWriter).listener(tabSeparatedText)
+				.listener(tabSeparatedCsv)
 				// .writer(excelWriter)
 				.build();
 	}
@@ -73,9 +76,9 @@ public class FileBatchProcessorConfig {
 			{
 				setLineTokenizer(new DelimitedLineTokenizer() {
 					{
-						setNames(FileProcessorConstants.colNames);
+						setNames(BatchFileConstants.colNames);
 						logger.info("FlatFileItemReader :: column names : "
-								+ String.join(",", FileProcessorConstants.colNames));
+								+ String.join(",", BatchFileConstants.colNames));
 					}
 				});
 				setFieldSetMapper(new BeanWrapperFieldSetMapper<GeoDataModel>() {
@@ -92,20 +95,32 @@ public class FileBatchProcessorConfig {
 	@Bean(destroyMethod = "")
 	@JobScope
 	public CompositeItemWriter<GeoDataModel> compositeWriter(StaxEventItemWriter<GeoDataModel> xmlItemWriter,
-			CustomItemWriter excelWriter, CustomItemWriter tabSeparatedText, CustomItemWriter tabSeparatedCsv) {
+			CustomItemWriter excelWriter, CustomItemWriter tabSeparatedText, CustomItemWriter tabSeparatedCsv,
+			FileWriterFactory fileWriterFactory) throws IllegalAccessException {
 		CompositeItemWriter<GeoDataModel> writer = new CompositeItemWriter<>();
-		writer.setDelegates(Arrays.asList(xmlItemWriter, excelWriter, tabSeparatedText, tabSeparatedCsv));
+		// Directly looping file type enum and invoking factory method for objects. It
+		// can also be passed from user input via JOB Parameter
+		writer.setDelegates(Stream.of(BatchFileConstants.FileTypes.values()).map(enumObj -> {
+			// Invoking factory method
+			try {
+				return fileWriterFactory.getInstance(enumObj.name());
+			} catch (IllegalAccessException e) {
+				throw new RuntimeException(
+						"IllegalAccessException - No FileWriter Bean found for the type :: " + enumObj.name());
+			}
+		}).collect(Collectors.toList()));
+
 		return writer;
 	}
 
 	// XMLWriter Bean
-	@Bean
+	@Bean(destroyMethod = "")
 	@JobScope
 	public StaxEventItemWriter<GeoDataModel> xmlItemWriter(@Value("${output.path}") String outputPath,
 			@Value("#{jobParameters['JobID']}") String jobId) throws Exception {
 		String fileName = outputPath + jobId + "_xml.xml";
 		Map<String, String> aliases = new HashMap<String, String>();
-		aliases.put("GeoData", "com.hpe.interview.model.GeoDataModel");
+		aliases.put("GeoData", "com.hpe.interview.mapper.GeoDataModel");
 		XStreamMarshaller marshaller = new XStreamMarshaller();
 		marshaller.setAliases(aliases);
 
@@ -122,7 +137,7 @@ public class FileBatchProcessorConfig {
 	@JobScope
 	public CustomItemWriter excelWriter(@Value("${output.path}") String outputPath,
 			@Value("#{jobParameters['JobID']}") String jobId) {
-		return new ExcelWriter("_excel.xlsx", outputPath + jobId);
+		return new ExcelWriterImpl(BatchFileConstants.xmlFileNameSuffix, outputPath + jobId);
 	}
 
 	@Bean
@@ -130,18 +145,20 @@ public class FileBatchProcessorConfig {
 	public CustomItemWriter tabSeparatedText(@Value("${output.path}") String outputPath,
 			@Value("#{jobParameters['JobID']}") String jobId) {
 		// Filename and
-		return new CommonFlatFileWriter("\t", "_TabSeparatedText.txt", outputPath + jobId);
+		return new CommonFlatFileWriterImpl(BatchFileConstants.tabDelimiter, "_tab" + BatchFileConstants.txtFileNameSuffix,
+				outputPath + jobId);
 	}
 
 	@Bean
 	@JobScope
 	public CustomItemWriter tabSeparatedCsv(@Value("${output.path}") String outputPath,
 			@Value("#{jobParameters['JobID']}") String jobId) {
-		return new CommonFlatFileWriter("\t", "_TabSeparatedCSV.csv", outputPath + jobId);
+		return new CommonFlatFileWriterImpl(BatchFileConstants.tabDelimiter, "_tab" + BatchFileConstants.csvFileNameSuffix,
+				outputPath + jobId);
 	}
 
 	/*
-	 * Another straightforward way without stream But perfomance wise its not good.
+	 * Another straightforward way without Custom IteWriter and streams. But perfomance wise its not good.
 	 * 
 	 * // TextWriter Bean
 	 * 

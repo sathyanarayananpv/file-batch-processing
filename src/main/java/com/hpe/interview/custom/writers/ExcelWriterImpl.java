@@ -1,4 +1,4 @@
-package com.hpe.interview.writers;
+package com.hpe.interview.custom.writers;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -19,11 +19,17 @@ import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.annotation.AfterStep;
 import org.springframework.batch.core.annotation.BeforeStep;
 
-import com.hpe.interview.config.FileProcessorConstants;
-import com.hpe.interview.model.GeoDataModel;
+import com.hpe.interview.constants.BatchFileConstants;
+import com.hpe.interview.mapper.GeoDataModel;
 
-public class ExcelWriter implements CustomItemWriter {
-	private static Logger logger = LoggerFactory.getLogger(ExcelWriter.class);
+/**
+ * 
+ * @author sathy
+ *
+ *         New Sheet will be created for every 10lakh records
+ */
+public class ExcelWriterImpl implements CustomItemWriter {
+	private static Logger logger = LoggerFactory.getLogger(ExcelWriterImpl.class);
 	private String outputFilename;
 	private Workbook workbook;
 	private CellStyle dataCellStyle;
@@ -31,13 +37,14 @@ public class ExcelWriter implements CustomItemWriter {
 	private final static int MAX_ROW_ALLOWED = 1000000;
 	int counter = 0;
 
-	public ExcelWriter(String fileName, String outputFolderAndPrefix) {
+	public ExcelWriterImpl(String fileName, String outputFolderAndPrefix) {
 		outputFilename = outputFolderAndPrefix + fileName;
 	}
 
 	@BeforeStep
 	public void beforeStep(StepExecution stepExecution) {
-		logger.debug("beforeStep ExcelWriter::" + outputFilename + " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Job Step Started("+outputFilename+") for ::" + stepExecution.getJobExecutionId()
+		+ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 		// outputFilename += "ExcelOutput.xlsx";
 		workbook = new SXSSFWorkbook(100);
 		createSheetWorkFlow();
@@ -56,8 +63,6 @@ public class ExcelWriter implements CustomItemWriter {
 
 	@Override
 	public void write(List<? extends GeoDataModel> items) throws Exception {
-		System.out.println("Writing ExcelWriter count(" + items.size() + ") ::" + outputFilename
-				+ " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 		Sheet sheet = workbook.getSheetAt(page);
 		int rowNum = sheet.getLastRowNum();
 		if (rowNum >= MAX_ROW_ALLOWED) {
@@ -72,8 +77,8 @@ public class ExcelWriter implements CustomItemWriter {
 			createStringCell(row, data.getAnzsic06(), 0);
 			createStringCell(row, data.getArea(), 1);
 			createStringCell(row, data.getYear(), 2);
-			createStringCell(row, String.valueOf(data.getEc_count()), 3);
-			createStringCell(row, String.valueOf(data.getGeo_count()), 4);
+			createStringCell(row, String.valueOf(data.getEcCount()), 3);
+			createStringCell(row, String.valueOf(data.getGeoCount()), 4);
 		}
 		counter += items.size();
 		logger.debug("Writing " + outputFilename + "::ExcelWriter => Completed(" + counter
@@ -90,8 +95,8 @@ public class ExcelWriter implements CustomItemWriter {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Job Step Completed for ::" + stepExecution.getJobExecutionId()
-				+ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		logger.info("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Job Step Completed("+outputFilename+") for ::" + stepExecution.getJobExecutionId()
+		+ ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 	}
 
 	private void addHeaders(Sheet sheet) {
@@ -110,7 +115,7 @@ public class ExcelWriter implements CustomItemWriter {
 		Row row = sheet.createRow(0);
 		int col = 0;
 
-		for (String header : FileProcessorConstants.colNames) {
+		for (String header : BatchFileConstants.colNames) {
 			Cell cell = row.createCell(col);
 			cell.setCellValue(header);
 			cell.setCellStyle(style);

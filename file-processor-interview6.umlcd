@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_6GdGMOM7EeucsYN8KSeWFw">
+  <modelElement href="file-processor-interview6.uml#_6guAUOM7EeucsYN8KSeWFw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_67R1YOM7EeucsYN8KSeWFw" sourceAnchor="0.0,62.0" targetAnchor="314.0,45.0" target="_67_AAOM7EeucsYN8KSeWFw" source="_67ZKIOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tvvseM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_67R1YeM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6twWwOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_67R1YuM7EeucsYN8KSeWFw" text="">
+      <visualProperties xmi:id="_7pCTQOM7EeucsYN8KSeWFw" position="-18.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_67R1Y-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tvvsuM7EeucsYN8KSeWFw"/>
+      <visualProperties xmi:id="_7o_3AeM7EeucsYN8KSeWFw" position="-29.0,-47.0"/>
+      <visibility xmi:id="_67R1ZOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67R1ZeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_67R1ZuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="excelWriter" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rshQOM7EeucsYN8KSeWFw"/>
+      <visualProperties xmi:id="_7pC6UOM7EeucsYN8KSeWFw" position="6.0,-65.0"/>
+      <stereotypes xmi:id="_E2dkwOM_EeucsYN8KSeWFw" name="Annotations"/>
+      <visibility xmi:id="_67R1Z-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67R1aOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_67TDgOM7EeucsYN8KSeWFw" sourceAnchor="0.0,92.0" targetAnchor="314.0,75.0" target="_67_AAOM7EeucsYN8KSeWFw" source="_67ZKIOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tw90OM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_67TDgeM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6txk4OM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_67TDguM7EeucsYN8KSeWFw" text="">
+      <visualProperties xmi:id="_7pNSYOM7EeucsYN8KSeWFw" position="-70.0,-19.000000000000057"/>
+    </nameVisual>
+    <sourceRole xmi:id="_67TDg-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tw90eM7EeucsYN8KSeWFw"/>
+      <visualProperties xmi:id="_7pF9oOM7EeucsYN8KSeWFw" position="-29.0,2.0"/>
+      <visibility xmi:id="_67TDhOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67TDheM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_67TDhuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="tabSeparatedText" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rtvYOM7EeucsYN8KSeWFw"/>
+      <visualProperties xmi:id="_7pOggOM7EeucsYN8KSeWFw" position="30.0,2.0"/>
+      <stereotypes xmi:id="_E2bvkOM_EeucsYN8KSeWFw" name="Annotations"/>
+      <visibility xmi:id="_67TDh-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67TDiOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_67URoOM7EeucsYN8KSeWFw" sourceAnchor="0.0,32.0" targetAnchor="314.0,15.0" target="_67_AAOM7EeucsYN8KSeWFw" source="_67ZKIOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6txk4eM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_67URoeM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tyL8OM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_67URouM7EeucsYN8KSeWFw" text="">
+      <visualProperties xmi:id="_7pUAEOM7EeucsYN8KSeWFw" position="-18.0,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_67URo-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6txk4uM7EeucsYN8KSeWFw"/>
+      <visualProperties xmi:id="_7pRj0OM7EeucsYN8KSeWFw" position="-55.0,2.0"/>
+      <visibility xmi:id="_67URpOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67URpeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_67URpuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="tabSeparatedCsv" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6ru9gOM7EeucsYN8KSeWFw"/>
+      <visualProperties xmi:id="_7pUnIOM7EeucsYN8KSeWFw" position="78.0,-14.0"/>
+      <stereotypes xmi:id="_E2Z6YOM_EeucsYN8KSeWFw" name="Annotations"/>
+      <visibility xmi:id="_67URp-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67URqOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_67WG0OM7EeucsYN8KSeWFw" source="_67ZKIOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tyzAOM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_67WG0eM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tzaEOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_67WG0uM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_67WG0-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tyzAeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_67WG1OM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67WG1eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_67WG1uM7EeucsYN8KSeWFw" aggregationKind="NONE" name="xmlItemWriter" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rwLoOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2XeIOM_EeucsYN8KSeWFw" name="Generics"/>
+      <stereotypes xmi:id="_E2YFMOM_EeucsYN8KSeWFw" name="Annotations"/>
+      <visibility xmi:id="_67WG1-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67WG2OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_67YjEOM7EeucsYN8KSeWFw" source="_67ZKIOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tzaEeM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_67YjEeM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6t0oMOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_67YjEuM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_67YjE-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tzaEuM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_67YjFOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67YjFeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_67YjFuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="handler" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6ryA0uM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2Vo8OM_EeucsYN8KSeWFw" name="StyledElement"/>
+      <visibility xmi:id="_67YjF-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67YjGOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <qualifierHelper xmi:id="_67YjGeM7EeucsYN8KSeWFw">
+        <qualifiers xmi:id="_67YjGuM7EeucsYN8KSeWFw">
+          <modelElement href="file-processor-interview6.uml#_6rzO8OM7EeucsYN8KSeWFw"/>
+          <visibility xmi:id="_67YjG-M7EeucsYN8KSeWFw" label="+"/>
+          <cardinality xmi:id="_67YjHOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+          <type xmi:id="_67YjHeM7EeucsYN8KSeWFw" name="String">
+            <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_6745YeM7EeucsYN8KSeWFw" targetItem="_67_AAOM7EeucsYN8KSeWFw" sourceItem="_6745YOM7EeucsYN8KSeWFw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_676ukOM7EeucsYN8KSeWFw" subClass="_67_AAOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6qvfAOM7EeucsYN8KSeWFw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_68SiAeM7EeucsYN8KSeWFw" targetItem="_68WMZOM7EeucsYN8KSeWFw" sourceItem="_68SiAOM7EeucsYN8KSeWFw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_68VlUOM7EeucsYN8KSeWFw" source="_68VlWeM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6ti7YOM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_68VlUeM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tkJgOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_68VlUuM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_68VlU-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6ti7YeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68VlVOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68VlVeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_68VlVuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rMyAOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68VlV-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_68VlWOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_68br8eM7EeucsYN8KSeWFw" targetItem="_68eIMOM7EeucsYN8KSeWFw" sourceItem="_68br8OM7EeucsYN8KSeWFw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_69VD0OM7EeucsYN8KSeWFw" sourceAnchor="255.0,0.0" targetAnchor="157.0,90.0" dashed="true" superClass="_67_AAOM7EeucsYN8KSeWFw" subClass="_69ol0OM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6p800OM7EeucsYN8KSeWFw"/>
+    <bendpoints xmi:id="_6TsmEOM9EeucsYN8KSeWFw" sourceY="-30" targetX="890" targetY="102"/>
+    <bendpoints xmi:id="_6TsmEeM9EeucsYN8KSeWFw" sourceX="-890" sourceY="-30" targetY="102"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_69Vq4OM7EeucsYN8KSeWFw" targetItem="_69ol0OM7EeucsYN8KSeWFw" sourceItem="_69VD0eM7EeucsYN8KSeWFw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_69W5AOM7EeucsYN8KSeWFw" source="_69ol0OM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tq3MeM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_69eNweM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tsFUOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_69c_oOM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_69dmsOM7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tq3MuM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_69gqAeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69gqAOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_69eNwOM7EeucsYN8KSeWFw" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6riJMOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2SloOM_EeucsYN8KSeWFw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_69hREeM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69hREOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_69mJkOM7EeucsYN8KSeWFw" source="_69ol0OM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tssYOM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_69mJkeM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tuhkOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_69mJkuM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_69mJk-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tssYeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_69mJlOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69mJleM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_69mJluM7EeucsYN8KSeWFw" aggregationKind="NONE" name="workbook" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rklceM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2RXgOM_EeucsYN8KSeWFw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_69mJl-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69mJmOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_69n-wOM7EeucsYN8KSeWFw" source="_69ol0OM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tuhkeM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_69n-weM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tvvsOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_69n-wuM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_69n-w-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tuhkuM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_69n-xOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69n-xeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_69n-xuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="dataCellStyle" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rlzkeM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2O7QOM_EeucsYN8KSeWFw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_69n-x-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69n-yOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_6-UiUOM7EeucsYN8KSeWFw" sourceAnchor="364.0,0.0" targetAnchor="157.0,90.0" dashed="true" superClass="_67_AAOM7EeucsYN8KSeWFw" subClass="_6-e6YOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6pjMMeM7EeucsYN8KSeWFw"/>
+    <bendpoints xmi:id="_6Tr_AOM9EeucsYN8KSeWFw" sourceY="-43" targetX="183" targetY="102"/>
+    <bendpoints xmi:id="_6Tr_AeM9EeucsYN8KSeWFw" sourceX="-183" sourceY="-43" targetY="102"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_6-VJYOM7EeucsYN8KSeWFw" targetItem="_6-e6YOM7EeucsYN8KSeWFw" sourceItem="_6-UiUeM7EeucsYN8KSeWFw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6-WXgOM7EeucsYN8KSeWFw" source="_6-e6YOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6toa8OM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_6-Za0-M7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tpCAOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6-Za0OM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_6-Za0eM7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6toa8eM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6-ao8eM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-ao8OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6-Za0uM7EeucsYN8KSeWFw" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rcpoOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2NGEOM_EeucsYN8KSeWFw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_6-bQAeM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_6-bQAOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6-eTUOM7EeucsYN8KSeWFw" source="_6-e6YOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tppEOM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_6-eTUeM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tq3MOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6-eTUuM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_6-eTU-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tppEeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6-eTVOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-eTVeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6-eTVuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="writer" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rd3wOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2LQ4OM_EeucsYN8KSeWFw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_6-eTV-M7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6-eTWOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6-wAIOM7EeucsYN8KSeWFw" source="_6-5KEOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tkJgeM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_6-1fsOM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tkwkOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6-04oOM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_6-04oeM7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tkJguM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6-378eM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-378OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6-04ouM7EeucsYN8KSeWFw" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rOnMOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6-4jAOM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_6-378uM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_6_OhQeM7EeucsYN8KSeWFw" targetItem="_6_dKwOM7EeucsYN8KSeWFw" sourceItem="_6_OhQOM7EeucsYN8KSeWFw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_6_PIUOM7EeucsYN8KSeWFw" sourceAnchor="314.0,61.0" targetAnchor="0.0,49.0" dashed="true" superClass="_6_dKwOM7EeucsYN8KSeWFw" subClass="_67ZKIOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6qHM4eM7EeucsYN8KSeWFw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6_PIUeM7EeucsYN8KSeWFw" target="_6_dKwOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6taYgOM7EeucsYN8KSeWFw"/>
+    <nameVisual xmi:id="_6_aHcOM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_6_aHceM7EeucsYN8KSeWFw" aggregationKind="NONE" name="object" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6kee8OM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_bVkuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_bVkeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <qualifierHelper xmi:id="_6_augeM7EeucsYN8KSeWFw">
+        <qualifiers xmi:id="_6_bVkOM7EeucsYN8KSeWFw">
+          <modelElement href="file-processor-interview6.uml#_6khiQOM7EeucsYN8KSeWFw"/>
+          <visibility xmi:id="_6_b8ouM7EeucsYN8KSeWFw" label="+"/>
+          <cardinality xmi:id="_6_b8o-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+          <type xmi:id="_6_b8oeM7EeucsYN8KSeWFw" name="String">
+            <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </sourceRole>
+    <targetRole xmi:id="_6_augOM7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6taYgeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_b8oOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_bVk-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6_ltoOM7EeucsYN8KSeWFw" source="_6_zJAOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tlXoOM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_6_p_EOM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tl-sOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6_ow8OM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_6_pYAOM7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tlXoeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_sbUOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_r0QOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6_pYAeM7EeucsYN8KSeWFw" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rXKEOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_tCYeM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_6_tCYOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6_mUsOM7EeucsYN8KSeWFw" source="_6_zJAOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tnM0eM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_6_rNMOM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tnz4OM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6_p_EeM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_6_p_EuM7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tnM0uM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_tpceM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_tpcOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6_qmIOM7EeucsYN8KSeWFw" aggregationKind="NONE" name="job" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6raNYOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2G_cOM_EeucsYN8KSeWFw" name="Annotations"/>
+      <visibility xmi:id="_6_uQgeM7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6_uQgOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_6_xT0OM7EeucsYN8KSeWFw" source="_6_zJAOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6tl-seM7EeucsYN8KSeWFw"/>
+    <stereotypes xmi:id="_6_xT0eM7EeucsYN8KSeWFw" name="Reference">
+      <modelElement href="file-processor-interview6.uml#_6tnM0OM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_6_xT0uM7EeucsYN8KSeWFw" text=""/>
+    <sourceRole xmi:id="_6_xT0-M7EeucsYN8KSeWFw" aggregationKind="NONE" name="">
+      <modelElement href="file-processor-interview6.uml#_6tl-suM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_xT1OM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_xT1eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_6_xT1uM7EeucsYN8KSeWFw" aggregationKind="NONE" name="jobLauncher" navigable="true">
+      <modelElement href="file-processor-interview6.uml#_6rYYMOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_E2EjMOM_EeucsYN8KSeWFw" name="Annotations"/>
+      <visibility xmi:id="_6_xT1-M7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6_xT2OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_6745YOM7EeucsYN8KSeWFw" sourceConnectionVisual="_6745YeM7EeucsYN8KSeWFw" text="&#xD;&#xA;@author sathy&#xD;&#xA; *" item="_67_AAOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6sM3k-M7EeucsYN8KSeWFw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_68SiAOM7EeucsYN8KSeWFw" sourceConnectionVisual="_68SiAeM7EeucsYN8KSeWFw" text="@param args - Command Arguments if any" item="_68WMZOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6sJNMuM7EeucsYN8KSeWFw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_68br8OM7EeucsYN8KSeWFw" sourceConnectionVisual="_68br8eM7EeucsYN8KSeWFw" text="&#xD;&#xA;@author sathy&#xD;&#xA; *" item="_68eIMOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6sMQguM7EeucsYN8KSeWFw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_69VD0eM7EeucsYN8KSeWFw" sourceConnectionVisual="_69Vq4OM7EeucsYN8KSeWFw" text="&#xD;&#xA;@author sathy&#xD;&#xA; *&#xD;&#xA;        New Sheet will be created for every 10lakh records" item="_69ol0OM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6sM3lOM7EeucsYN8KSeWFw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_6-UiUeM7EeucsYN8KSeWFw" sourceConnectionVisual="_6-VJYOM7EeucsYN8KSeWFw" text="CommonFlatFileWriter - Takes input parameter i.e delimiter &amp; filename for&#xD;&#xA;generating the files dynamically&#xD;&#xA;&#xD;&#xA;@author sathy&#xD;&#xA; *" item="_6-e6YOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6sM3kuM7EeucsYN8KSeWFw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_6_OhQOM7EeucsYN8KSeWFw" sourceConnectionVisual="_6_OhQeM7EeucsYN8KSeWFw" text="&#xD;&#xA;@author sathy&#xD;&#xA; *" item="_6_dKwOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6sNeoeM7EeucsYN8KSeWFw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6-e6YOM7EeucsYN8KSeWFw" comments="_6-UiUeM7EeucsYN8KSeWFw" targetConnectionVisual="_6-VJYOM7EeucsYN8KSeWFw" name="CommonFlatFileWriterImpl" associationsOut="_6-WXgOM7EeucsYN8KSeWFw _6-eTUOM7EeucsYN8KSeWFw" generalizations="_6-UiUOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6j4CAOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_6-e6YeM7EeucsYN8KSeWFw" position="-3543.0,-232.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_6-e6YuM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_6-e6Y-M7EeucsYN8KSeWFw" defaultValue="LoggerFactory.getLogger(CommonFlatFileWriterImpl.class)" name="logger" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rcpoOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6ZOM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rdQsOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6ZeM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_6-e6ZuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6-e6Z-M7EeucsYN8KSeWFw" name="Logger">
+        <modelElement href="file-processor-interview6.uml#_6ogqYOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6-e6aOM7EeucsYN8KSeWFw" name="writer">
+      <modelElement href="file-processor-interview6.uml#_6rd3wOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6aeM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6ree0OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6auM7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6-e6a-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6-e6bOM7EeucsYN8KSeWFw" name="FileWriter">
+        <modelElement href="file-processor-interview6.uml#_6pfh0OM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6-e6beM7EeucsYN8KSeWFw" defaultValue="null" name="delimiter">
+      <modelElement href="file-processor-interview6.uml#_6ree0eM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6buM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rfF4OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6b-M7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6-e6cOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6-e6ceM7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6-e6cuM7EeucsYN8KSeWFw" defaultValue="null" name="fileName">
+      <modelElement href="file-processor-interview6.uml#_6rfs8OM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6c-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rgUAOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6dOM7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6-e6deM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6-e6duM7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6-e6d-M7EeucsYN8KSeWFw" defaultValue="0" name="counter">
+      <modelElement href="file-processor-interview6.uml#_6rgUAeM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6eOM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rg7EeM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6eeM7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6-e6euM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6-e6e-M7EeucsYN8KSeWFw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6-e6fOM7EeucsYN8KSeWFw" name="CommonFlatFileWriterImpl">
+      <modelElement href="file-processor-interview6.uml#_6j86gOM7EeucsYN8KSeWFw"/>
+      <keywords xmi:id="_6-e6feM7EeucsYN8KSeWFw" keyword="create"/>
+      <visibility xmi:id="_6-e6fuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-e6f-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-e6gOM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6kAk4uM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-e6geM7EeucsYN8KSeWFw" name="CommonFlatFileWriterImpl">
+          <modelElement href="file-processor-interview6.uml#_6j4CAOM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-e6guM7EeucsYN8KSeWFw" name="delimiter">
+        <modelElement href="file-processor-interview6.uml#_6j86geM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-e6g-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-e6hOM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-e6heM7EeucsYN8KSeWFw" name="fileName">
+        <modelElement href="file-processor-interview6.uml#_6j86guM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-e6huM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-e6h-M7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-e6iOM7EeucsYN8KSeWFw" name="outputFolderAndPrefix">
+        <modelElement href="file-processor-interview6.uml#_6j-IoOM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-e6ieM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-e6iuM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-e6i-M7EeucsYN8KSeWFw" name="closeResource">
+      <modelElement href="file-processor-interview6.uml#_6kCaEOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6-e6jOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-e6jeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_6-e6juM7EeucsYN8KSeWFw" name="beforeStep">
+      <modelElement href="file-processor-interview6.uml#_6qoxUOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6j-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6qp_cOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6-e6kOM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6qp_ceM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6keM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-e6kuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_6-e6k-M7EeucsYN8KSeWFw" name="stepExecution">
+        <modelElement href="file-processor-interview6.uml#_6qpYYOM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-e6lOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-e6leM7EeucsYN8KSeWFw" name="StepExecution">
+          <modelElement href="file-processor-interview6.uml#_6pilIOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-e6luM7EeucsYN8KSeWFw" name="write">
+      <modelElement href="file-processor-interview6.uml#_6qqmgOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6l-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6qrNkOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6-e6mOM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6qsbsOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6meM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-e6muM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_6-e6m-M7EeucsYN8KSeWFw" name="items">
+        <modelElement href="file-processor-interview6.uml#_6qqmgeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-e6nOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-e6neM7EeucsYN8KSeWFw" name="List">
+          <modelElement href="file-processor-interview6.uml#_6phXAeM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-e6nuM7EeucsYN8KSeWFw" name="afterStep">
+      <modelElement href="file-processor-interview6.uml#_6qtCwOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-e6n-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6qtp0OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6-e6oOM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6quQ4OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-e6oeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-e6ouM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_6-e6o-M7EeucsYN8KSeWFw" name="stepExecution">
+        <modelElement href="file-processor-interview6.uml#_6qtCweM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-e6pOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-e6peM7EeucsYN8KSeWFw" name="StepExecution">
+          <modelElement href="file-processor-interview6.uml#_6pilIOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_69ol0OM7EeucsYN8KSeWFw" comments="_69VD0eM7EeucsYN8KSeWFw" targetConnectionVisual="_69Vq4OM7EeucsYN8KSeWFw" name="ExcelWriterImpl" associationsOut="_69W5AOM7EeucsYN8KSeWFw _69mJkOM7EeucsYN8KSeWFw _69n-wOM7EeucsYN8KSeWFw" generalizations="_69VD0OM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6kK88OM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_69ol0eM7EeucsYN8KSeWFw" position="-2727.0,-245.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_69ol0uM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_69ol0-M7EeucsYN8KSeWFw" defaultValue="LoggerFactory.getLogger(ExcelWriterImpl.class)" name="logger" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6riJMOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69ol1OM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rjXUOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69ol1eM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69ol1uM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_69ol1-M7EeucsYN8KSeWFw" name="Logger">
+        <modelElement href="file-processor-interview6.uml#_6ogqYOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_69ol2OM7EeucsYN8KSeWFw" name="outputFilename">
+      <modelElement href="file-processor-interview6.uml#_6rj-YOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69ol2eM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rklcOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69ol2uM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69ol2-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_69ol3OM7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_69ol3eM7EeucsYN8KSeWFw" name="workbook">
+      <modelElement href="file-processor-interview6.uml#_6rklceM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69ol3uM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rlzkOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69ol3-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69ol4OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_69ol4eM7EeucsYN8KSeWFw" name="Workbook">
+        <modelElement href="file-processor-interview6.uml#_6p5KceM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_69ol4uM7EeucsYN8KSeWFw" name="dataCellStyle">
+      <modelElement href="file-processor-interview6.uml#_6rlzkeM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69ol4-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rmaoOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69ol5OM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69ol5eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_69ol5uM7EeucsYN8KSeWFw" name="CellStyle">
+        <modelElement href="file-processor-interview6.uml#_6pycwOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_69ol5-M7EeucsYN8KSeWFw" defaultValue="0" name="page">
+      <modelElement href="file-processor-interview6.uml#_6rnBsOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69ol6OM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6roP0OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69ol6eM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69ol6uM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_69ol6-M7EeucsYN8KSeWFw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_69ol7OM7EeucsYN8KSeWFw" defaultValue="1000000" name="MAX_ROW_ALLOWED" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6ro24OM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69ol7eM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rpd8OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69ol7uM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69ol7-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_69ol8OM7EeucsYN8KSeWFw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_69ol8eM7EeucsYN8KSeWFw" defaultValue="0" name="counter">
+      <modelElement href="file-processor-interview6.uml#_6rqFAOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69ol8uM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6rqsEOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69ol8-M7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_69ol9OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_69ol9eM7EeucsYN8KSeWFw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_69ol9uM7EeucsYN8KSeWFw" name="ExcelWriterImpl">
+      <modelElement href="file-processor-interview6.uml#_6kOAQOM7EeucsYN8KSeWFw"/>
+      <keywords xmi:id="_69ol9-M7EeucsYN8KSeWFw" keyword="create"/>
+      <visibility xmi:id="_69ol-OM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69ol-eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_69ol-uM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6kOnUuM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_69ol--M7EeucsYN8KSeWFw" name="ExcelWriterImpl">
+          <modelElement href="file-processor-interview6.uml#_6kK88OM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_69ol_OM7EeucsYN8KSeWFw" name="fileName">
+        <modelElement href="file-processor-interview6.uml#_6kOAQeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69ol_eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69ol_uM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_69ol_-M7EeucsYN8KSeWFw" name="outputFolderAndPrefix">
+        <modelElement href="file-processor-interview6.uml#_6kOAQuM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69omAOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69omAeM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_69omAuM7EeucsYN8KSeWFw" name="createSheetWorkFlow">
+      <modelElement href="file-processor-interview6.uml#_6kPOYOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_69omA-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69omBOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_69omBeM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6q4B4OM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_69omBuM7EeucsYN8KSeWFw" name="Sheet">
+          <modelElement href="file-processor-interview6.uml#_6p38UeM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_69omB-M7EeucsYN8KSeWFw" name="initDataStyle">
+      <modelElement href="file-processor-interview6.uml#_6kQcgOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_69omCOM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69omCeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_69omCuM7EeucsYN8KSeWFw" name="beforeStep">
+      <modelElement href="file-processor-interview6.uml#_6q2MsOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69omC-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6q2zwOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_69omDOM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6q3a0OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69omDeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69omDuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_69omD-M7EeucsYN8KSeWFw" name="stepExecution">
+        <modelElement href="file-processor-interview6.uml#_6q2MseM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69omEOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69omEeM7EeucsYN8KSeWFw" name="StepExecution">
+          <modelElement href="file-processor-interview6.uml#_6pilIOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_69omEuM7EeucsYN8KSeWFw" name="write">
+      <modelElement href="file-processor-interview6.uml#_6q4o8OM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69omE-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6q5QAOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_69omFOM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6q6eIOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69pM4OM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69pM4eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_69pM4uM7EeucsYN8KSeWFw" name="items">
+        <modelElement href="file-processor-interview6.uml#_6q4o8eM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69pM4-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69pM5OM7EeucsYN8KSeWFw" name="List">
+          <modelElement href="file-processor-interview6.uml#_6phXAeM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_69pM5eM7EeucsYN8KSeWFw" name="afterStep">
+      <modelElement href="file-processor-interview6.uml#_6q7FMeM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69pM5uM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6q7sQOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_69pM5-M7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6q8TUOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69pM6OM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_69pM6eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_69pM6uM7EeucsYN8KSeWFw" name="stepExecution">
+        <modelElement href="file-processor-interview6.uml#_6q7FMuM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69pM6-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69pM7OM7EeucsYN8KSeWFw" name="StepExecution">
+          <modelElement href="file-processor-interview6.uml#_6pilIOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_69pM7eM7EeucsYN8KSeWFw" name="addHeaders">
+      <modelElement href="file-processor-interview6.uml#_6q86YOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_69pM7uM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69pM7-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_69pM8OM7EeucsYN8KSeWFw" name="sheet">
+        <modelElement href="file-processor-interview6.uml#_6q86YeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69pM8eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69pM8uM7EeucsYN8KSeWFw" name="Sheet">
+          <modelElement href="file-processor-interview6.uml#_6p38UeM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_69pM8-M7EeucsYN8KSeWFw" name="createStringCell">
+      <modelElement href="file-processor-interview6.uml#_6q9hcOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_69pM9OM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6q-vkOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_69pM9eM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6q_WoOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_69pM9uM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_69pM9-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_69pM-OM7EeucsYN8KSeWFw" name="row">
+        <modelElement href="file-processor-interview6.uml#_6q9hceM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69pM-eM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69pM-uM7EeucsYN8KSeWFw" name="Row">
+          <modelElement href="file-processor-interview6.uml#_6p3VQOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_69pM--M7EeucsYN8KSeWFw" name="val">
+        <modelElement href="file-processor-interview6.uml#_6q-IgOM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69pM_OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69pM_eM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_69pM_uM7EeucsYN8KSeWFw" name="col">
+        <modelElement href="file-processor-interview6.uml#_6q-IgeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_69pM_-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_69pNAOM7EeucsYN8KSeWFw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6-5KEOM7EeucsYN8KSeWFw" name="BatchFileProcessorConfig" associationsOut="_6-wAIOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6iuygOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_6-5KEeM7EeucsYN8KSeWFw" position="-3541.0,118.0" size="653.0,230.0"/>
+    <stereotypes xmi:id="_6-5KEuM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+      <modelElement href="file-processor-interview6.uml#_6ixOwOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_6-5KE-M7EeucsYN8KSeWFw" name="Annotations">
+      <modelElement href="file-processor-interview6.uml#_6jSMIOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <visibility xmi:id="_6-5KFOM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_6-5KFeM7EeucsYN8KSeWFw" defaultValue="LoggerFactory.getLogger(BatchFileProcessorConfig.class)" name="logger" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rOnMOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6-5KFuM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_6-5KF-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6-5KGOM7EeucsYN8KSeWFw" name="Logger">
+        <modelElement href="file-processor-interview6.uml#_6ogqYOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6-5KGeM7EeucsYN8KSeWFw" name="reader">
+      <modelElement href="file-processor-interview6.uml#_6i0SEOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KGuM7EeucsYN8KSeWFw" name="Generics">
+        <modelElement href="file-processor-interview6.uml#_6i2uUOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6-5KG-M7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6i4jgOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5KHOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KHeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KHuM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6qdyMuM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KH-M7EeucsYN8KSeWFw" name="FlatFileItemReader">
+          <modelElement href="file-processor-interview6.uml#_6o5E4eM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5KIOM7EeucsYN8KSeWFw" name="inputFileName">
+        <modelElement href="file-processor-interview6.uml#_6i0SEeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KIeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KIuM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-5KI-M7EeucsYN8KSeWFw" name="xmlItemWriter">
+      <modelElement href="file-processor-interview6.uml#_6i8N4OM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KJOM7EeucsYN8KSeWFw" name="Generics">
+        <modelElement href="file-processor-interview6.uml#_6i-qIOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6-5KJeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6jBtcOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5KJuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KJ-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KKOM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6qj40OM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KKeM7EeucsYN8KSeWFw" name="StaxEventItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6o_ykeM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5KKuM7EeucsYN8KSeWFw" name="outputPath">
+        <modelElement href="file-processor-interview6.uml#_6i8N4eM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KK-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KLOM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KLeM7EeucsYN8KSeWFw" name="jobId">
+        <modelElement href="file-processor-interview6.uml#_6i808OM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KLuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KL-M7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-5KMOM7EeucsYN8KSeWFw" name="excelWriter">
+      <modelElement href="file-processor-interview6.uml#_6jC7kOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KMeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6jHNAOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5KMuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KM-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KNOM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6pJjkOM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KNeM7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5KNuM7EeucsYN8KSeWFw" name="outputPath">
+        <modelElement href="file-processor-interview6.uml#_6jDioOM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KN-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KOOM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KOeM7EeucsYN8KSeWFw" name="jobId">
+        <modelElement href="file-processor-interview6.uml#_6jEJsOM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KOuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KO-M7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-5KPOM7EeucsYN8KSeWFw" name="tabSeparatedText">
+      <modelElement href="file-processor-interview6.uml#_6jIbIOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KPeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6jMFgOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5KPuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KP-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KQOM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6pKKoOM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KQeM7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5KQuM7EeucsYN8KSeWFw" name="outputPath">
+        <modelElement href="file-processor-interview6.uml#_6jIbIeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KQ-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KROM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KReM7EeucsYN8KSeWFw" name="jobId">
+        <modelElement href="file-processor-interview6.uml#_6jJCMOM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KRuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KR-M7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-5KSOM7EeucsYN8KSeWFw" name="tabSeparatedCsv">
+      <modelElement href="file-processor-interview6.uml#_6jNToOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KSeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6jQ-AOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5KSuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KS-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KTOM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6pKxsOM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KTeM7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5KTuM7EeucsYN8KSeWFw" name="outputPath">
+        <modelElement href="file-processor-interview6.uml#_6jNToeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KT-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KUOM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KUeM7EeucsYN8KSeWFw" name="jobId">
+        <modelElement href="file-processor-interview6.uml#_6jNTouM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KUuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KU-M7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-5KVOM7EeucsYN8KSeWFw" name="readCSVFileJob">
+      <modelElement href="file-processor-interview6.uml#_6qXrkOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KVeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6qY5sOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5KVuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KV-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KWOM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6qYSoOM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KWeM7EeucsYN8KSeWFw" name="Job">
+          <modelElement href="file-processor-interview6.uml#_6ov68OM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5KWuM7EeucsYN8KSeWFw" name="jobBuilderFactory">
+        <modelElement href="file-processor-interview6.uml#_6qXrkeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KW-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KXOM7EeucsYN8KSeWFw" name="JobBuilderFactory">
+          <modelElement href="file-processor-interview6.uml#_6o0MYOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KXeM7EeucsYN8KSeWFw" name="step">
+        <modelElement href="file-processor-interview6.uml#_6qXrkuM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KXuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KX-M7EeucsYN8KSeWFw" name="Step">
+          <modelElement href="file-processor-interview6.uml#_6oxJEeM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-5KYOM7EeucsYN8KSeWFw" name="step">
+      <modelElement href="file-processor-interview6.uml#_6qaH0OM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KYeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6qdLIOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5KYuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KY-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KZOM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6qau4OM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KZeM7EeucsYN8KSeWFw" name="Step">
+          <modelElement href="file-processor-interview6.uml#_6oxJEeM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5KZuM7EeucsYN8KSeWFw" name="stepBuilderFactory">
+        <modelElement href="file-processor-interview6.uml#_6qaH0eM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KZ-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KaOM7EeucsYN8KSeWFw" name="StepBuilderFactory">
+          <modelElement href="file-processor-interview6.uml#_6o2ooOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KaeM7EeucsYN8KSeWFw" name="compositeWriter">
+        <modelElement href="file-processor-interview6.uml#_6qaH0uM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KauM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5Ka-M7EeucsYN8KSeWFw" name="CompositeItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6o-kceM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KbOM7EeucsYN8KSeWFw" name="reader">
+        <modelElement href="file-processor-interview6.uml#_6qaH0-M7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KbeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KbuM7EeucsYN8KSeWFw" name="FlatFileItemReader">
+          <modelElement href="file-processor-interview6.uml#_6o5E4eM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5Kb-M7EeucsYN8KSeWFw" name="excelWriter">
+        <modelElement href="file-processor-interview6.uml#_6qaH1OM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KcOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KceM7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KcuM7EeucsYN8KSeWFw" name="tabSeparatedText">
+        <modelElement href="file-processor-interview6.uml#_6qaH1eM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5Kc-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KdOM7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KdeM7EeucsYN8KSeWFw" name="tabSeparatedCsv">
+        <modelElement href="file-processor-interview6.uml#_6qaH1uM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KduM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5Kd-M7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_6-5KeOM7EeucsYN8KSeWFw" name="compositeWriter">
+      <modelElement href="file-processor-interview6.uml#_6qfnYeM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6-5KeeM7EeucsYN8KSeWFw" name="Generics">
+        <modelElement href="file-processor-interview6.uml#_6qhckOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_6-5KeuM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6qjRwOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6-5Ke-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6-5KfOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6-5KfeM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6qhckeM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6-5KfuM7EeucsYN8KSeWFw" name="CompositeItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6o-kceM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6-5Kf-M7EeucsYN8KSeWFw" name="xmlItemWriter">
+        <modelElement href="file-processor-interview6.uml#_6qfnYuM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KgOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KgeM7EeucsYN8KSeWFw" name="StaxEventItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6o_ykeM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KguM7EeucsYN8KSeWFw" name="excelWriter">
+        <modelElement href="file-processor-interview6.uml#_6qfnY-M7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5Kg-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KhOM7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KheM7EeucsYN8KSeWFw" name="tabSeparatedText">
+        <modelElement href="file-processor-interview6.uml#_6qgOcOM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KhuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5Kh-M7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5KiOM7EeucsYN8KSeWFw" name="tabSeparatedCsv">
+        <modelElement href="file-processor-interview6.uml#_6qgOceM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KieM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KiuM7EeucsYN8KSeWFw" name="CustomItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_6-5Ki-M7EeucsYN8KSeWFw" name="fileWriterFactory">
+        <modelElement href="file-processor-interview6.uml#_6qgOcuM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6-5KjOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6-5KjeM7EeucsYN8KSeWFw" name="FileWriterFactory">
+          <modelElement href="file-processor-interview6.uml#_6ka0kOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_67_AAOM7EeucsYN8KSeWFw" comments="_6745YOM7EeucsYN8KSeWFw" targetConnectionVisual="_6745YeM7EeucsYN8KSeWFw" name="CustomItemWriter" associationsIn="_67R1YOM7EeucsYN8KSeWFw _67TDgOM7EeucsYN8KSeWFw _67URoOM7EeucsYN8KSeWFw" generalizations="_676ukOM7EeucsYN8KSeWFw" subclassedBy="_69VD0OM7EeucsYN8KSeWFw _6-UiUOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_67_AAeM7EeucsYN8KSeWFw" position="-3519.0,-467.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_67_AAuM7EeucsYN8KSeWFw" label="+"/>
+    <operations xmi:id="_67_AA-M7EeucsYN8KSeWFw" name="beforeStep">
+      <modelElement href="file-processor-interview6.uml#_6qwtIOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67_ABOM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6qxUMOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_67_ABeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6qx7QOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67_ABuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67_AB-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_67_ACOM7EeucsYN8KSeWFw" name="stepExecution">
+        <modelElement href="file-processor-interview6.uml#_6qwtIeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_67_ACeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_67_ACuM7EeucsYN8KSeWFw" name="StepExecution">
+          <modelElement href="file-processor-interview6.uml#_6pilIOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_67_AC-M7EeucsYN8KSeWFw" name="afterStep">
+      <modelElement href="file-processor-interview6.uml#_6qyiUOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67_ADOM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+        <modelElement href="file-processor-interview6.uml#_6qzJYOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_67_ADeM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6qzwcOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67_ADuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67_AD-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_67_AEOM7EeucsYN8KSeWFw" name="stepExecution">
+        <modelElement href="file-processor-interview6.uml#_6qyiUeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_67_AEeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_67_AEuM7EeucsYN8KSeWFw" name="StepExecution">
+          <modelElement href="file-processor-interview6.uml#_6pilIOM7EeucsYN8KSeWFw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_67ZKIOM7EeucsYN8KSeWFw" name="FileWriterFactoryImpl" associationsOut="_67R1YOM7EeucsYN8KSeWFw _67TDgOM7EeucsYN8KSeWFw _67URoOM7EeucsYN8KSeWFw _67WG0OM7EeucsYN8KSeWFw _67YjEOM7EeucsYN8KSeWFw" generalizations="_6_PIUOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6kjXcOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_67ZKIeM7EeucsYN8KSeWFw" position="-3010.0,-484.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_67ZKIuM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+      <modelElement href="file-processor-interview6.uml#_6kklkOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_67ZKI-M7EeucsYN8KSeWFw" name="Annotations">
+      <modelElement href="file-processor-interview6.uml#_6lDtwOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <visibility xmi:id="_67ZKJOM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_67ZKJeM7EeucsYN8KSeWFw" name="excelWriter">
+      <modelElement href="file-processor-interview6.uml#_6rshQOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67ZKJuM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6rtIUOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67ZKJ-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67ZKKOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67ZKKeM7EeucsYN8KSeWFw" name="CustomItemWriter">
+        <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67ZKKuM7EeucsYN8KSeWFw" name="tabSeparatedText">
+      <modelElement href="file-processor-interview6.uml#_6rtvYOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67ZKK-M7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6ruWcOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67ZKLOM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67ZKLeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67ZxMOM7EeucsYN8KSeWFw" name="CustomItemWriter">
+        <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67ZxMeM7EeucsYN8KSeWFw" name="tabSeparatedCsv">
+      <modelElement href="file-processor-interview6.uml#_6ru9gOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67ZxMuM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6rvkkOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67ZxM-M7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67ZxNOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67ZxNeM7EeucsYN8KSeWFw" name="CustomItemWriter">
+        <modelElement href="file-processor-interview6.uml#_6kHSkOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67ZxNuM7EeucsYN8KSeWFw" name="xmlItemWriter">
+      <modelElement href="file-processor-interview6.uml#_6rwLoOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67ZxN-M7EeucsYN8KSeWFw" name="Generics">
+        <modelElement href="file-processor-interview6.uml#_6rxZwOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_67ZxOOM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6ryA0OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67ZxOeM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67ZxOuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67ZxO-M7EeucsYN8KSeWFw" name="StaxEventItemWriter">
+        <modelElement href="file-processor-interview6.uml#_6o_ykeM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67ZxPOM7EeucsYN8KSeWFw" defaultValue="new HashMap&lt;String, Object>()" name="handler" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6ryA0uM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67ZxPeM7EeucsYN8KSeWFw" name="StyledElement">
+        <modelElement href="file-processor-interview6.uml#_6ryn4eM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67ZxPuM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_67ZxP-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67ZxQOM7EeucsYN8KSeWFw" name="Object">
+        <modelElement href="file-processor-interview6.uml#_6rCZ8OM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_67ZxQeM7EeucsYN8KSeWFw" name="getObject">
+      <modelElement href="file-processor-interview6.uml#_6kmawOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67ZxQuM7EeucsYN8KSeWFw" name="Generics">
+        <modelElement href="file-processor-interview6.uml#_6koP8OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_67ZxQ-M7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6kpeEOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67ZxROM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67ZxReM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_67ZxRuM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6rE2MOM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_67ZxR-M7EeucsYN8KSeWFw" name="Map">
+          <modelElement href="file-processor-interview6.uml#_6orpgeM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_67ZxSOM7EeucsYN8KSeWFw" name="getInstance">
+      <modelElement href="file-processor-interview6.uml#_6kqsMOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_67ZxSeM7EeucsYN8KSeWFw" name="Generics">
+        <modelElement href="file-processor-interview6.uml#_6kshYOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_67ZxSuM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6lB4kOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_67ZxS-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67ZxTOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_67ZxTeM7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6rE2MeM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_67ZxTuM7EeucsYN8KSeWFw" name="ItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6prvEeM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_67ZxT-M7EeucsYN8KSeWFw" name="fileType">
+        <modelElement href="file-processor-interview6.uml#_6kqsMeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_67ZxUOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_67ZxUeM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_6_dKwOM7EeucsYN8KSeWFw" comments="_6_OhQOM7EeucsYN8KSeWFw" targetConnectionVisual="_6_OhQeM7EeucsYN8KSeWFw" name="FileWriterFactory" associationsIn="_6_PIUeM7EeucsYN8KSeWFw" subclassedBy="_6_PIUOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6ka0kOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_6_dKweM7EeucsYN8KSeWFw" position="-2617.0,-472.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_6_dKwuM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_6_dKw-M7EeucsYN8KSeWFw" name="object">
+      <modelElement href="file-processor-interview6.uml#_6kee8OM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_dKxOM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_dKxeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6_dKxuM7EeucsYN8KSeWFw" name="Object">
+        <modelElement href="file-processor-interview6.uml#_6rCZ8OM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6_dKx-M7EeucsYN8KSeWFw" name="getInstance">
+      <modelElement href="file-processor-interview6.uml#_6kcCsOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6_dKyOM7EeucsYN8KSeWFw" name="Generics">
+        <modelElement href="file-processor-interview6.uml#_6kd34OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6_dKyeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_dKyuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6_dKy-M7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6rBy4OM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6_dKzOM7EeucsYN8KSeWFw" name="ItemWriter">
+          <modelElement href="file-processor-interview6.uml#_6prvEeM7EeucsYN8KSeWFw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_6_dKzeM7EeucsYN8KSeWFw" name="fileType">
+        <modelElement href="file-processor-interview6.uml#_6kcCseM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_6_dKzuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+        <type xmi:id="_6_dKz-M7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_68VlWeM7EeucsYN8KSeWFw" name="BatchFileProcessorInterviewApplication" associationsOut="_68VlUOM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6ilBgOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_68VlWuM7EeucsYN8KSeWFw" position="-3544.0,374.0" size="340.0,97.0"/>
+    <stereotypes xmi:id="_68VlW-M7EeucsYN8KSeWFw" name="LegacyStyledElement">
+      <modelElement href="file-processor-interview6.uml#_6indwOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_68VlXOM7EeucsYN8KSeWFw" name="Annotations">
+      <modelElement href="file-processor-interview6.uml#_6isWQOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <visibility xmi:id="_68VlXeM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_68WMYOM7EeucsYN8KSeWFw" defaultValue="LoggerFactory.getLogger(BatchFileProcessorInterviewApplication.class)" name="logger" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rMyAOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68WMYeM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_68WMYuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_68WMY-M7EeucsYN8KSeWFw" name="Logger">
+        <modelElement href="file-processor-interview6.uml#_6ogqYOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_68WMZOM7EeucsYN8KSeWFw" comments="_68SiAOM7EeucsYN8KSeWFw" targetConnectionVisual="_68SiAeM7EeucsYN8KSeWFw" name="main" staticOperation="true">
+      <modelElement href="file-processor-interview6.uml#_6iqhEOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_68WMZeM7EeucsYN8KSeWFw" name="StyledElement">
+        <modelElement href="file-processor-interview6.uml#_6irIIOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_68WMZuM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68WMZ-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_68WMaOM7EeucsYN8KSeWFw" name="args">
+        <modelElement href="file-processor-interview6.uml#_6iqhEeM7EeucsYN8KSeWFw"/>
+        <cardinality xmi:id="_68WMaeM7EeucsYN8KSeWFw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_68WMauM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_6_zJAOM7EeucsYN8KSeWFw" name="RestController" associationsOut="_6_ltoOM7EeucsYN8KSeWFw _6_mUsOM7EeucsYN8KSeWFw _6_xT0OM7EeucsYN8KSeWFw">
+    <modelElement href="file-processor-interview6.uml#_6jsb0OM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_6_zJAeM7EeucsYN8KSeWFw" position="-3183.0,376.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_6_zJAuM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+      <modelElement href="file-processor-interview6.uml#_6ju4EOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_6_zJA-M7EeucsYN8KSeWFw" name="Annotations">
+      <modelElement href="file-processor-interview6.uml#_6jx7YOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <visibility xmi:id="_6_zJBOM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_6_zJBeM7EeucsYN8KSeWFw" defaultValue="LoggerFactory.getLogger(RestController.class)" name="logger" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rXKEOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_6_zJBuM7EeucsYN8KSeWFw" label="-"/>
+      <cardinality xmi:id="_6_zJB-M7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6_zJCOM7EeucsYN8KSeWFw" name="Logger">
+        <modelElement href="file-processor-interview6.uml#_6ogqYOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6_zJCeM7EeucsYN8KSeWFw" name="jobLauncher">
+      <modelElement href="file-processor-interview6.uml#_6rYYMOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6_zJCuM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6rZmUOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6_zJC-M7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6_zJDOM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6_zJDeM7EeucsYN8KSeWFw" name="JobLauncher">
+        <modelElement href="file-processor-interview6.uml#_6pVJwOM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_6_zJDuM7EeucsYN8KSeWFw" name="job">
+      <modelElement href="file-processor-interview6.uml#_6raNYOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6_zJD-M7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6ra0cOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6_zJEOM7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_6_zJEeM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_6_zJEuM7EeucsYN8KSeWFw" name="Job">
+        <modelElement href="file-processor-interview6.uml#_6ov68OM7EeucsYN8KSeWFw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6_zJE-M7EeucsYN8KSeWFw" name="getEmployees">
+      <modelElement href="file-processor-interview6.uml#_6jvfIOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_6_zJFOM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6jwtQOM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_6_zJFeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_6_zJFuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6_zJF-M7EeucsYN8KSeWFw">
+        <modelElement href="file-processor-interview6.uml#_6jwGMOM7EeucsYN8KSeWFw"/>
+        <type xmi:id="_6_zJGOM7EeucsYN8KSeWFw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_68eIMOM7EeucsYN8KSeWFw" comments="_68br8OM7EeucsYN8KSeWFw" targetConnectionVisual="_68br8eM7EeucsYN8KSeWFw" name="BatchFileConstants">
+    <modelElement href="file-processor-interview6.uml#_6jkgAOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_68eIMeM7EeucsYN8KSeWFw" position="-2851.0,121.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_68eIMuM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_68eIM-M7EeucsYN8KSeWFw" defaultValue="{ &quot;anzsic06&quot;, &quot;Area&quot;, &quot;year&quot;, &quot;geo_count&quot;, &quot;ec_count&quot; }" name="colNames" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rRDcOM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_68eINOM7EeucsYN8KSeWFw" name="Array">
+        <modelElement href="file-processor-interview6.uml#_6rRqgeM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_68eINeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68eINuM7EeucsYN8KSeWFw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_68eIN-M7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_68eIOOM7EeucsYN8KSeWFw" defaultValue="1000" name="CHUNK_SIZE" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rSRkeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68eIOeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68eIOuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_68eIO-M7EeucsYN8KSeWFw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_68eIPOM7EeucsYN8KSeWFw" defaultValue="&quot;_excel.xlsx&quot;" name="xmlFileNameSuffix" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rTfsOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68eIPeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68eIPuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_68eIP-M7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_68eIQOM7EeucsYN8KSeWFw" defaultValue="&quot;_text.txt&quot;" name="txtFileNameSuffix" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rUt0OM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68eIQeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68eIQuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_68eIQ-M7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_68eIROM7EeucsYN8KSeWFw" defaultValue="&quot;_csv.csv&quot;" name="csvFileNameSuffix" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rVU4eM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68eIReM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68eIRuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_68eIR-M7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_68eISOM7EeucsYN8KSeWFw" defaultValue="&quot;\t&quot;" name="tabDelimiter" staticAttribute="true">
+      <modelElement href="file-processor-interview6.uml#_6rWjAOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_68eISeM7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_68eISuM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_68eIS-M7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_67Ck0OM7EeucsYN8KSeWFw" name="GeoDataModel">
+    <modelElement href="file-processor-interview6.uml#_6lPT8OM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_67DL4OM7EeucsYN8KSeWFw" position="-2848.0,378.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_67DL4eM7EeucsYN8KSeWFw" label="+"/>
+    <attributes xmi:id="_67DL4uM7EeucsYN8KSeWFw" name="anzsic06">
+      <modelElement href="file-processor-interview6.uml#_6rz2AOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_67DL4-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67DL5OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67DL5eM7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67DL5uM7EeucsYN8KSeWFw" name="area">
+      <modelElement href="file-processor-interview6.uml#_6r0dEOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_67DL5-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67DL6OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67DL6eM7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67DL6uM7EeucsYN8KSeWFw" name="year">
+      <modelElement href="file-processor-interview6.uml#_6r1EIOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_67DL6-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67DL7OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67DL7eM7EeucsYN8KSeWFw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67DL7uM7EeucsYN8KSeWFw" name="geoCount">
+      <modelElement href="file-processor-interview6.uml#_6r1EIeM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_67DL7-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67DL8OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67DL8eM7EeucsYN8KSeWFw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_67DL8uM7EeucsYN8KSeWFw" name="ecCount">
+      <modelElement href="file-processor-interview6.uml#_6r1rMOM7EeucsYN8KSeWFw"/>
+      <visibility xmi:id="_67DL8-M7EeucsYN8KSeWFw" label="+"/>
+      <cardinality xmi:id="_67DL9OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+      <type xmi:id="_67DL9eM7EeucsYN8KSeWFw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_68nSIOM7EeucsYN8KSeWFw" name="FileTypes">
+    <modelElement href="file-processor-interview6.uml#_6jnjUOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_68nSIeM7EeucsYN8KSeWFw" position="-2668.0,376.0" size="-1.0,-1.0"/>
+    <keywords xmi:id="_68nSIuM7EeucsYN8KSeWFw" keyword="static"/>
+    <visibility xmi:id="_68nSI-M7EeucsYN8KSeWFw" label="+"/>
+    <literals xmi:id="_68nSJOM7EeucsYN8KSeWFw" name="csvTabFile">
+      <modelElement href="file-processor-interview6.uml#_6joxcOM7EeucsYN8KSeWFw"/>
+    </literals>
+    <literals xmi:id="_68nSJeM7EeucsYN8KSeWFw" name="textTablFile">
+      <modelElement href="file-processor-interview6.uml#_6joxceM7EeucsYN8KSeWFw"/>
+    </literals>
+    <literals xmi:id="_68nSJuM7EeucsYN8KSeWFw" name="excelFile">
+      <modelElement href="file-processor-interview6.uml#_6jpYgOM7EeucsYN8KSeWFw"/>
+    </literals>
+    <literals xmi:id="_68nSJ-M7EeucsYN8KSeWFw" name="xmlFile">
+      <modelElement href="file-processor-interview6.uml#_6jpYgeM7EeucsYN8KSeWFw"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_650c0OM7EeucsYN8KSeWFw" name="FileProcessorInterviewApplicationTests">
+    <modelElement href="file-processor-interview6.uml#_6lVakOM7EeucsYN8KSeWFw"/>
+    <visualProperties xmi:id="_650c0eM7EeucsYN8KSeWFw" position="-2743.0,289.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_650c0uM7EeucsYN8KSeWFw" name="LegacyStyledElement">
+      <modelElement href="file-processor-interview6.uml#_6lX20OM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_650c0-M7EeucsYN8KSeWFw" name="Annotations">
+      <modelElement href="file-processor-interview6.uml#_6lZsAOM7EeucsYN8KSeWFw"/>
+    </stereotypes>
+    <visibility xmi:id="_650c1OM7EeucsYN8KSeWFw" label="~"/>
+    <operations xmi:id="_650c1eM7EeucsYN8KSeWFw" name="contextLoads">
+      <modelElement href="file-processor-interview6.uml#_6lX20eM7EeucsYN8KSeWFw"/>
+      <stereotypes xmi:id="_650c1uM7EeucsYN8KSeWFw" name="Annotations">
+        <modelElement href="file-processor-interview6.uml#_6lZE8OM7EeucsYN8KSeWFw"/>
+      </stereotypes>
+      <visibility xmi:id="_650c1-M7EeucsYN8KSeWFw" label="~"/>
+      <cardinality xmi:id="_650c2OM7EeucsYN8KSeWFw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

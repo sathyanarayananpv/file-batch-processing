@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_6ELOQOM7EeucsYN8KSeWFw" name="file_processor_interview6">
+    <eAnnotations xmi:id="_6PgUgOM7EeucsYN8KSeWFw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_6PgUgeM7EeucsYN8KSeWFw" source="codegen">
+        <details xmi:id="_6PgUguM7EeucsYN8KSeWFw" key="codegenDirectory" value="/file-processor-interview/src/main/java"/>
+        <details xmi:id="_65IgUOM7EeucsYN8KSeWFw" key="AssociatedSourceCode" value="/file-processor-interview/src/main/java/com/hpe/interview/BatchFileProcessorInterviewApplication.java;285313130/1;/file-processor-interview/src/main/java/com/hpe/interview/config/BatchFileProcessorConfig.java;2917077397/1;/file-processor-interview/src/main/java/com/hpe/interview/constants/BatchFileConstants.java;1253339507/1;/file-processor-interview/src/main/java/com/hpe/interview/controller/RestController.java;2428618903/1;/file-processor-interview/src/main/java/com/hpe/interview/custom/writers/CommonFlatFileWriterImpl.java;2913802095/1;/file-processor-interview/src/main/java/com/hpe/interview/custom/writers/CustomItemWriter.java;372595519/1;/file-processor-interview/src/main/java/com/hpe/interview/custom/writers/ExcelWriterImpl.java;3123052092/1;/file-processor-interview/src/main/java/com/hpe/interview/custom/writers/factory/FileWriterFactory.java;1810404483/1;/file-processor-interview/src/main/java/com/hpe/interview/custom/writers/factory/FileWriterFactoryImpl.java;1943772776/1;/file-processor-interview/src/main/java/com/hpe/interview/mapper/GeoDataModel.java;2257579786/1;/file-processor-interview/src/test/java/com/hpe/interview/fileprocessorinterview/FileProcessorInterviewApplicationTests.java;1786563642/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_6ior4OM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_6ior4eM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_6ior4uM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_6ipS8OM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_6ipS8eM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_6ipS8uM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_6ipS8-M7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_6ipS9OM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_6ipS9eM7EeucsYN8KSeWFw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6gpH0OM7EeucsYN8KSeWFw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6gpH0eM7EeucsYN8KSeWFw" name="hpe">
+        <packagedElement xmi:type="uml:Package" xmi:id="_6guAUOM7EeucsYN8KSeWFw" name="interview">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g2jMOM7EeucsYN8KSeWFw" name="constants">
+            <packagedElement xmi:type="uml:Class" xmi:id="_6jkgAOM7EeucsYN8KSeWFw" name="BatchFileConstants">
+              <ownedComment xmi:id="_6sMQguM7EeucsYN8KSeWFw">
+                <body>&#xD;
+@author sathy&#xD;
+ *</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_6rRDcOM7EeucsYN8KSeWFw" name="colNames" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6rRqgOM7EeucsYN8KSeWFw" value="*"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rSRkOM7EeucsYN8KSeWFw" value="{ &quot;anzsic06&quot;, &quot;Area&quot;, &quot;year&quot;, &quot;geo_count&quot;, &quot;ec_count&quot; }"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6rSRkeM7EeucsYN8KSeWFw" name="CHUNK_SIZE" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rS4oOM7EeucsYN8KSeWFw" value="1000"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6rTfsOM7EeucsYN8KSeWFw" name="xmlFileNameSuffix" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rUGwOM7EeucsYN8KSeWFw" value="&quot;_excel.xlsx&quot;"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6rUt0OM7EeucsYN8KSeWFw" name="txtFileNameSuffix" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rVU4OM7EeucsYN8KSeWFw" value="&quot;_text.txt&quot;"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6rVU4eM7EeucsYN8KSeWFw" name="csvFileNameSuffix" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rV78OM7EeucsYN8KSeWFw" value="&quot;_csv.csv&quot;"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6rWjAOM7EeucsYN8KSeWFw" name="tabDelimiter" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rWjAeM7EeucsYN8KSeWFw" value="&quot;\t&quot;"/>
+              </ownedAttribute>
+              <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_6jnjUOM7EeucsYN8KSeWFw" name="FileTypes">
+                <eAnnotations xmi:id="_6joKYOM7EeucsYN8KSeWFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_6joKYeM7EeucsYN8KSeWFw" key="static"/>
+                </eAnnotations>
+                <ownedLiteral xmi:id="_6joxcOM7EeucsYN8KSeWFw" name="csvTabFile"/>
+                <ownedLiteral xmi:id="_6joxceM7EeucsYN8KSeWFw" name="textTablFile"/>
+                <ownedLiteral xmi:id="_6jpYgOM7EeucsYN8KSeWFw" name="excelFile"/>
+                <ownedLiteral xmi:id="_6jpYgeM7EeucsYN8KSeWFw" name="xmlFile"/>
+              </nestedClassifier>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g3KQOM7EeucsYN8KSeWFw" name="custom">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6g3KQeM7EeucsYN8KSeWFw" name="writers">
+              <packagedElement xmi:type="uml:Package" xmi:id="_6g3KQuM7EeucsYN8KSeWFw" name="factory">
+                <packagedElement xmi:type="uml:Interface" xmi:id="_6ka0kOM7EeucsYN8KSeWFw" name="FileWriterFactory">
+                  <ownedComment xmi:id="_6sNeoeM7EeucsYN8KSeWFw">
+                    <body>&#xD;
+@author sathy&#xD;
+ *</body>
+                  </ownedComment>
+                  <ownedAttribute xmi:id="_6kee8OM7EeucsYN8KSeWFw" name="object" type="_6rCZ8OM7EeucsYN8KSeWFw" association="_6taYgOM7EeucsYN8KSeWFw">
+                    <qualifier xmi:id="_6khiQOM7EeucsYN8KSeWFw">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </qualifier>
+                  </ownedAttribute>
+                  <ownedOperation xmi:id="_6kcCsOM7EeucsYN8KSeWFw" name="getInstance">
+                    <ownedParameter xmi:id="_6kcCseM7EeucsYN8KSeWFw" name="fileType">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_6rBy4OM7EeucsYN8KSeWFw" type="_6prvEeM7EeucsYN8KSeWFw" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_6kjXcOM7EeucsYN8KSeWFw" name="FileWriterFactoryImpl">
+                  <ownedAttribute xmi:id="_6rshQOM7EeucsYN8KSeWFw" name="excelWriter" visibility="private" type="_6kHSkOM7EeucsYN8KSeWFw" association="_6tvvseM7EeucsYN8KSeWFw"/>
+                  <ownedAttribute xmi:id="_6rtvYOM7EeucsYN8KSeWFw" name="tabSeparatedText" visibility="private" type="_6kHSkOM7EeucsYN8KSeWFw" association="_6tw90OM7EeucsYN8KSeWFw"/>
+                  <ownedAttribute xmi:id="_6ru9gOM7EeucsYN8KSeWFw" name="tabSeparatedCsv" visibility="private" type="_6kHSkOM7EeucsYN8KSeWFw" association="_6txk4eM7EeucsYN8KSeWFw"/>
+                  <ownedAttribute xmi:id="_6rwLoOM7EeucsYN8KSeWFw" name="xmlItemWriter" visibility="private" type="_6o_ykeM7EeucsYN8KSeWFw" association="_6tyzAOM7EeucsYN8KSeWFw"/>
+                  <ownedAttribute xmi:id="_6ryA0uM7EeucsYN8KSeWFw" name="handler" visibility="private" isLeaf="true" isStatic="true" type="_6rCZ8OM7EeucsYN8KSeWFw" isReadOnly="true" association="_6tzaEeM7EeucsYN8KSeWFw">
+                    <qualifier xmi:id="_6rzO8OM7EeucsYN8KSeWFw">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </qualifier>
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_6ryn4OM7EeucsYN8KSeWFw" value="new HashMap&lt;String, Object>()"/>
+                  </ownedAttribute>
+                  <interfaceRealization xmi:id="_6qHM4eM7EeucsYN8KSeWFw" client="_6kjXcOM7EeucsYN8KSeWFw" supplier="_6ka0kOM7EeucsYN8KSeWFw" contract="_6ka0kOM7EeucsYN8KSeWFw"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sFi0OM7EeucsYN8KSeWFw" name="getObject" specification="_6kmawOM7EeucsYN8KSeWFw">
+                    <ownedParameter xmi:id="_6sFi0eM7EeucsYN8KSeWFw" type="_6orpgeM7EeucsYN8KSeWFw" direction="return"/>
+                    <language>java</language>
+                    <body>handler.put(BatchFileConstants.FileTypes.excelFile.toString(), excelWriter);&#xD;
+		handler.put(BatchFileConstants.FileTypes.textTablFile.toString(), tabSeparatedText);&#xD;
+		handler.put(BatchFileConstants.FileTypes.csvTabFile.toString(), tabSeparatedCsv);&#xD;
+		handler.put(BatchFileConstants.FileTypes.xmlFile.toString(), xmlItemWriter);&#xD;
+		return handler;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sGJ4OM7EeucsYN8KSeWFw" name="getInstance" specification="_6kqsMOM7EeucsYN8KSeWFw">
+                    <ownedParameter xmi:id="_6sGJ4eM7EeucsYN8KSeWFw" name="fileType">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_6sGJ4uM7EeucsYN8KSeWFw" type="_6prvEeM7EeucsYN8KSeWFw" direction="return"/>
+                    <language>java</language>
+                    <body>return (ItemWriter&lt;GeoDataModel>) Optional.ofNullable(handler.get(fileType))&#xD;
+				.orElseThrow(() -> new IllegalAccessException(&quot;Invalid File Type&quot;));&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_6kmawOM7EeucsYN8KSeWFw" name="getObject" method="_6sFi0OM7EeucsYN8KSeWFw">
+                    <ownedParameter xmi:id="_6rE2MOM7EeucsYN8KSeWFw" type="_6orpgeM7EeucsYN8KSeWFw" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_6kqsMOM7EeucsYN8KSeWFw" name="getInstance" method="_6sGJ4OM7EeucsYN8KSeWFw">
+                    <ownedParameter xmi:id="_6kqsMeM7EeucsYN8KSeWFw" name="fileType">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_6rE2MeM7EeucsYN8KSeWFw" type="_6prvEeM7EeucsYN8KSeWFw" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_6taYgOM7EeucsYN8KSeWFw" name="" memberEnd="_6kee8OM7EeucsYN8KSeWFw _6taYgeM7EeucsYN8KSeWFw">
+                  <ownedEnd xmi:id="_6taYgeM7EeucsYN8KSeWFw" name="" type="_6ka0kOM7EeucsYN8KSeWFw" association="_6taYgOM7EeucsYN8KSeWFw"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_6tvvseM7EeucsYN8KSeWFw" name="" memberEnd="_6tvvsuM7EeucsYN8KSeWFw _6rshQOM7EeucsYN8KSeWFw">
+                  <ownedEnd xmi:id="_6tvvsuM7EeucsYN8KSeWFw" name="" type="_6kjXcOM7EeucsYN8KSeWFw" association="_6tvvseM7EeucsYN8KSeWFw"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_6tw90OM7EeucsYN8KSeWFw" name="" memberEnd="_6tw90eM7EeucsYN8KSeWFw _6rtvYOM7EeucsYN8KSeWFw">
+                  <ownedEnd xmi:id="_6tw90eM7EeucsYN8KSeWFw" name="" type="_6kjXcOM7EeucsYN8KSeWFw" association="_6tw90OM7EeucsYN8KSeWFw"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_6txk4eM7EeucsYN8KSeWFw" name="" memberEnd="_6txk4uM7EeucsYN8KSeWFw _6ru9gOM7EeucsYN8KSeWFw">
+                  <ownedEnd xmi:id="_6txk4uM7EeucsYN8KSeWFw" name="" type="_6kjXcOM7EeucsYN8KSeWFw" association="_6txk4eM7EeucsYN8KSeWFw"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_6tyzAOM7EeucsYN8KSeWFw" name="" memberEnd="_6tyzAeM7EeucsYN8KSeWFw _6rwLoOM7EeucsYN8KSeWFw">
+                  <ownedEnd xmi:id="_6tyzAeM7EeucsYN8KSeWFw" name="" type="_6kjXcOM7EeucsYN8KSeWFw" association="_6tyzAOM7EeucsYN8KSeWFw"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_6tzaEeM7EeucsYN8KSeWFw" name="" memberEnd="_6tzaEuM7EeucsYN8KSeWFw _6ryA0uM7EeucsYN8KSeWFw">
+                  <ownedEnd xmi:id="_6tzaEuM7EeucsYN8KSeWFw" name="" type="_6kjXcOM7EeucsYN8KSeWFw" association="_6tzaEeM7EeucsYN8KSeWFw"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_6j4CAOM7EeucsYN8KSeWFw" name="CommonFlatFileWriterImpl">
+                <ownedComment xmi:id="_6sM3kuM7EeucsYN8KSeWFw">
+                  <body>CommonFlatFileWriter - Takes input parameter i.e delimiter &amp; filename for&#xD;
+generating the files dynamically&#xD;
+&#xD;
+@author sathy&#xD;
+ *</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_6rcpoOM7EeucsYN8KSeWFw" name="logger" visibility="private" isStatic="true" type="_6ogqYOM7EeucsYN8KSeWFw" association="_6toa8OM7EeucsYN8KSeWFw">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rcpoeM7EeucsYN8KSeWFw" value="LoggerFactory.getLogger(CommonFlatFileWriterImpl.class)"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_6rd3wOM7EeucsYN8KSeWFw" name="writer" visibility="package" type="_6pfh0OM7EeucsYN8KSeWFw" association="_6tppEOM7EeucsYN8KSeWFw"/>
+                <ownedAttribute xmi:id="_6ree0eM7EeucsYN8KSeWFw" name="delimiter" visibility="package">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6ree0uM7EeucsYN8KSeWFw" value="null"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_6rfs8OM7EeucsYN8KSeWFw" name="fileName" visibility="package">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rfs8eM7EeucsYN8KSeWFw" value="null"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_6rgUAeM7EeucsYN8KSeWFw" name="counter" visibility="package">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rg7EOM7EeucsYN8KSeWFw" value="0"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_6pjMMeM7EeucsYN8KSeWFw" client="_6j4CAOM7EeucsYN8KSeWFw" supplier="_6kHSkOM7EeucsYN8KSeWFw" contract="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r-1IOM7EeucsYN8KSeWFw" name="CommonFlatFileWriterImpl" specification="_6j86gOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6r-1IeM7EeucsYN8KSeWFw" name="delimiter">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6r-1IuM7EeucsYN8KSeWFw" name="fileName">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6r-1I-M7EeucsYN8KSeWFw" name="outputFolderAndPrefix">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6r-1JOM7EeucsYN8KSeWFw" type="_6j4CAOM7EeucsYN8KSeWFw" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+		this.delimiter = delimiter;&#xD;
+		this.fileName = outputFolderAndPrefix + fileName;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r_cMOM7EeucsYN8KSeWFw" name="beforeStep" specification="_6qoxUOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6r_cMeM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                  <language>java</language>
+                  <body>try {&#xD;
+			writer = new FileWriter(fileName);&#xD;
+			logger.info(&quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Job Step Started(&quot;+fileName+&quot;) for ::&quot; + stepExecution.getJobExecutionId()&#xD;
+			+ &quot;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+			writer.write(String.join(delimiter, BatchFileConstants.colNames));&#xD;
+		} catch (Exception e) {&#xD;
+			logger.error(e.getMessage());&#xD;
+			closeResource();&#xD;
+			throw new RuntimeException(e.getMessage());&#xD;
+		}&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r_cMuM7EeucsYN8KSeWFw" name="write" specification="_6qqmgOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6r_cM-M7EeucsYN8KSeWFw" name="items" type="_6phXAeM7EeucsYN8KSeWFw"/>
+                  <language>java</language>
+                  <body>try {&#xD;
+			writer.write(&quot;\n&quot; + (items.stream()&#xD;
+					.map(item -> String.valueOf((new StringBuffer().append(item.getAnzsic06()).append(delimiter)&#xD;
+							.append(item.getArea()).append(delimiter).append(item.getYear()).append(delimiter)&#xD;
+							.append(item.getGeoCount()).append(delimiter).append(item.getEcCount())).toString()))&#xD;
+					.collect(Collectors.joining(&quot;\n&quot;))));&#xD;
+			writer.flush();;
+		} catch (IOException e) {&#xD;
+			logger.error(e.getMessage());&#xD;
+			closeResource();&#xD;
+			throw new RuntimeException(e.getMessage());&#xD;
+		}&#xD;
+		counter += items.size();&#xD;
+		logger.debug(&quot;Writing &quot; + fileName + &quot;::CommonFlatFileWriter => Completed(&quot; + counter&#xD;
+				+ &quot;) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sADQOM7EeucsYN8KSeWFw" name="afterStep" specification="_6qtCwOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sADQeM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                  <language>java</language>
+                  <body>logger.debug(&quot;afterStep CommonFlatFileWriter::&quot; + fileName + &quot; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+		try {&#xD;
+			writer.close();&#xD;
+		} catch (IOException e) {&#xD;
+			logger.error(e.getMessage());&#xD;
+			closeResource();&#xD;
+			throw new RuntimeException(e.getMessage());&#xD;
+		}&#xD;
+		logger.info(&quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Job Step Completed(&quot;+fileName+&quot;) for ::&quot; + stepExecution.getJobExecutionId()&#xD;
+		+ &quot;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sADQuM7EeucsYN8KSeWFw" name="closeResource" specification="_6kCaEOM7EeucsYN8KSeWFw">
+                  <language>java</language>
+                  <body>if (null != writer) {&#xD;
+			try {&#xD;
+				writer.close();&#xD;
+			} catch (IOException e) {&#xD;
+				logger.error(e.getMessage());&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_6j86gOM7EeucsYN8KSeWFw" name="CommonFlatFileWriterImpl" method="_6r-1IOM7EeucsYN8KSeWFw">
+                  <eAnnotations xmi:id="_6kAk4OM7EeucsYN8KSeWFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_6kAk4eM7EeucsYN8KSeWFw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_6j86geM7EeucsYN8KSeWFw" name="delimiter">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6j86guM7EeucsYN8KSeWFw" name="fileName">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6j-IoOM7EeucsYN8KSeWFw" name="outputFolderAndPrefix">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6kAk4uM7EeucsYN8KSeWFw" type="_6j4CAOM7EeucsYN8KSeWFw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6kCaEOM7EeucsYN8KSeWFw" name="closeResource" method="_6sADQuM7EeucsYN8KSeWFw"/>
+                <ownedOperation xmi:id="_6qoxUOM7EeucsYN8KSeWFw" name="beforeStep" method="_6r_cMOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6qpYYOM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6qqmgOM7EeucsYN8KSeWFw" name="write" method="_6r_cMuM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6qqmgeM7EeucsYN8KSeWFw" name="items" type="_6phXAeM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6qtCwOM7EeucsYN8KSeWFw" name="afterStep" method="_6sADQOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6qtCweM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6kHSkOM7EeucsYN8KSeWFw" name="CustomItemWriter">
+                <ownedComment xmi:id="_6sM3k-M7EeucsYN8KSeWFw">
+                  <body>&#xD;
+@author sathy&#xD;
+ *</body>
+                </ownedComment>
+                <generalization xmi:id="_6qvfAOM7EeucsYN8KSeWFw" general="_6prvEeM7EeucsYN8KSeWFw"/>
+                <ownedOperation xmi:id="_6qwtIOM7EeucsYN8KSeWFw" name="beforeStep">
+                  <ownedParameter xmi:id="_6qwtIeM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6qyiUOM7EeucsYN8KSeWFw" name="afterStep">
+                  <ownedParameter xmi:id="_6qyiUeM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_6kK88OM7EeucsYN8KSeWFw" name="ExcelWriterImpl">
+                <ownedComment xmi:id="_6sM3lOM7EeucsYN8KSeWFw">
+                  <body>&#xD;
+@author sathy&#xD;
+ *&#xD;
+        New Sheet will be created for every 10lakh records</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_6riJMOM7EeucsYN8KSeWFw" name="logger" visibility="private" isStatic="true" type="_6ogqYOM7EeucsYN8KSeWFw" association="_6tq3MeM7EeucsYN8KSeWFw">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6riwQOM7EeucsYN8KSeWFw" value="LoggerFactory.getLogger(ExcelWriterImpl.class)"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_6rj-YOM7EeucsYN8KSeWFw" name="outputFilename" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_6rklceM7EeucsYN8KSeWFw" name="workbook" visibility="private" type="_6p5KceM7EeucsYN8KSeWFw" association="_6tssYOM7EeucsYN8KSeWFw"/>
+                <ownedAttribute xmi:id="_6rlzkeM7EeucsYN8KSeWFw" name="dataCellStyle" visibility="private" type="_6pycwOM7EeucsYN8KSeWFw" association="_6tuhkeM7EeucsYN8KSeWFw"/>
+                <ownedAttribute xmi:id="_6rnBsOM7EeucsYN8KSeWFw" name="page" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rnowOM7EeucsYN8KSeWFw" value="0"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_6ro24OM7EeucsYN8KSeWFw" name="MAX_ROW_ALLOWED" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6ro24eM7EeucsYN8KSeWFw" value="1000000"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_6rqFAOM7EeucsYN8KSeWFw" name="counter" visibility="package">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rqFAeM7EeucsYN8KSeWFw" value="0"/>
+                </ownedAttribute>
+                <interfaceRealization xmi:id="_6p800OM7EeucsYN8KSeWFw" client="_6kK88OM7EeucsYN8KSeWFw" supplier="_6kHSkOM7EeucsYN8KSeWFw" contract="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sBRYOM7EeucsYN8KSeWFw" name="ExcelWriterImpl" specification="_6kOAQOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sBRYeM7EeucsYN8KSeWFw" name="fileName">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6sBRYuM7EeucsYN8KSeWFw" name="outputFolderAndPrefix">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6sBRY-M7EeucsYN8KSeWFw" type="_6kK88OM7EeucsYN8KSeWFw" direction="return"/>
+                  <language>java</language>
+                  <body>outputFilename = outputFolderAndPrefix + fileName;&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sBRZOM7EeucsYN8KSeWFw" name="beforeStep" specification="_6q2MsOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sBRZeM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                  <language>java</language>
+                  <body>logger.info(&quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Job Step Started(&quot;+outputFilename+&quot;) for ::&quot; + stepExecution.getJobExecutionId()&#xD;
+		+ &quot;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+		// outputFilename += &quot;ExcelOutput.xlsx&quot;;&#xD;
+		workbook = new SXSSFWorkbook(100);&#xD;
+		createSheetWorkFlow();&#xD;
+&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sB4cOM7EeucsYN8KSeWFw" name="createSheetWorkFlow" specification="_6kPOYOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sB4ceM7EeucsYN8KSeWFw" type="_6p38UeM7EeucsYN8KSeWFw" direction="return"/>
+                  <language>java</language>
+                  <body>Sheet sheet = workbook.createSheet(&quot;GeoDatas-Segment&quot; + page);&#xD;
+		sheet.createFreezePane(0, 3, 0, 3);&#xD;
+		sheet.setDefaultColumnWidth(20);&#xD;
+		addHeaders(sheet);&#xD;
+		initDataStyle();&#xD;
+		return sheet;&#xD;
+&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sCfgOM7EeucsYN8KSeWFw" name="write" specification="_6q4o8OM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sCfgeM7EeucsYN8KSeWFw" name="items" type="_6phXAeM7EeucsYN8KSeWFw"/>
+                  <language>java</language>
+                  <body>Sheet sheet = workbook.getSheetAt(page);&#xD;
+		int rowNum = sheet.getLastRowNum();&#xD;
+		if (rowNum >= MAX_ROW_ALLOWED) {&#xD;
+			// Workflow to add new sheet&#xD;
+			page++;&#xD;
+			sheet = createSheetWorkFlow();&#xD;
+			rowNum = sheet.getLastRowNum();&#xD;
+		}&#xD;
+		for (GeoDataModel data : items) {&#xD;
+			rowNum++;&#xD;
+			Row row = sheet.createRow(rowNum);&#xD;
+			createStringCell(row, data.getAnzsic06(), 0);&#xD;
+			createStringCell(row, data.getArea(), 1);&#xD;
+			createStringCell(row, data.getYear(), 2);&#xD;
+			createStringCell(row, String.valueOf(data.getEcCount()), 3);&#xD;
+			createStringCell(row, String.valueOf(data.getGeoCount()), 4);&#xD;
+		}&#xD;
+		counter += items.size();&#xD;
+		logger.debug(&quot;Writing &quot; + outputFilename + &quot;::ExcelWriter => Completed(&quot; + counter&#xD;
+				+ &quot;) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sDGkOM7EeucsYN8KSeWFw" name="afterStep" specification="_6q7FMeM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sDGkeM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                  <language>java</language>
+                  <body>logger.debug(&quot;afterStep ExcelWriter::&quot; + outputFilename + &quot; >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+		try {&#xD;
+			FileOutputStream fos = new FileOutputStream(outputFilename);&#xD;
+			workbook.write(fos);&#xD;
+			fos.close();&#xD;
+		} catch (IOException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		logger.info(&quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Job Step Completed(&quot;+outputFilename+&quot;) for ::&quot; + stepExecution.getJobExecutionId()&#xD;
+		+ &quot;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>&quot;);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sDGkuM7EeucsYN8KSeWFw" name="addHeaders" specification="_6q86YOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sDGk-M7EeucsYN8KSeWFw" name="sheet" type="_6p38UeM7EeucsYN8KSeWFw"/>
+                  <language>java</language>
+                  <body>Workbook wb = sheet.getWorkbook();&#xD;
+&#xD;
+		CellStyle style = wb.createCellStyle();&#xD;
+		Font font = wb.createFont();&#xD;
+&#xD;
+		font.setFontHeightInPoints((short) 10);&#xD;
+		font.setFontName(&quot;Arial&quot;);&#xD;
+		font.setBold(true);&#xD;
+		style.setAlignment(HorizontalAlignment.CENTER);&#xD;
+		style.setFont(font);&#xD;
+&#xD;
+		Row row = sheet.createRow(0);&#xD;
+		int col = 0;&#xD;
+&#xD;
+		for (String header : BatchFileConstants.colNames) {&#xD;
+			Cell cell = row.createCell(col);&#xD;
+			cell.setCellValue(header);&#xD;
+			cell.setCellStyle(style);&#xD;
+			col++;&#xD;
+		}&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sDtoOM7EeucsYN8KSeWFw" name="initDataStyle" specification="_6kQcgOM7EeucsYN8KSeWFw">
+                  <language>java</language>
+                  <body>dataCellStyle = workbook.createCellStyle();&#xD;
+		Font font = workbook.createFont();&#xD;
+&#xD;
+		font.setFontHeightInPoints((short) 10);&#xD;
+		font.setFontName(&quot;Arial&quot;);&#xD;
+		// dataCellStyle.setAlignment(CellStyle.ALIGN_LEFT);&#xD;
+		dataCellStyle.setFont(font);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6sEUsOM7EeucsYN8KSeWFw" name="createStringCell" specification="_6q9hcOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6sEUseM7EeucsYN8KSeWFw" name="row" type="_6p3VQOM7EeucsYN8KSeWFw"/>
+                  <ownedParameter xmi:id="_6sEUsuM7EeucsYN8KSeWFw" name="val">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6sEUs-M7EeucsYN8KSeWFw" name="col">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>Cell cell = row.createCell(col);&#xD;
+		cell.setCellType(CellType.STRING);&#xD;
+		cell.setCellValue(val);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_6kOAQOM7EeucsYN8KSeWFw" name="ExcelWriterImpl" method="_6sBRYOM7EeucsYN8KSeWFw">
+                  <eAnnotations xmi:id="_6kOnUOM7EeucsYN8KSeWFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_6kOnUeM7EeucsYN8KSeWFw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_6kOAQeM7EeucsYN8KSeWFw" name="fileName">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6kOAQuM7EeucsYN8KSeWFw" name="outputFolderAndPrefix">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6kOnUuM7EeucsYN8KSeWFw" type="_6kK88OM7EeucsYN8KSeWFw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6kPOYOM7EeucsYN8KSeWFw" name="createSheetWorkFlow" method="_6sB4cOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6q4B4OM7EeucsYN8KSeWFw" type="_6p38UeM7EeucsYN8KSeWFw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6kQcgOM7EeucsYN8KSeWFw" name="initDataStyle" visibility="private" method="_6sDtoOM7EeucsYN8KSeWFw"/>
+                <ownedOperation xmi:id="_6q2MsOM7EeucsYN8KSeWFw" name="beforeStep" method="_6sBRZOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6q2MseM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6q4o8OM7EeucsYN8KSeWFw" name="write" method="_6sCfgOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6q4o8eM7EeucsYN8KSeWFw" name="items" type="_6phXAeM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6q7FMeM7EeucsYN8KSeWFw" name="afterStep" method="_6sDGkOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6q7FMuM7EeucsYN8KSeWFw" name="stepExecution" type="_6pilIOM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6q86YOM7EeucsYN8KSeWFw" name="addHeaders" visibility="private" method="_6sDGkuM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6q86YeM7EeucsYN8KSeWFw" name="sheet" type="_6p38UeM7EeucsYN8KSeWFw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_6q9hcOM7EeucsYN8KSeWFw" name="createStringCell" visibility="private" method="_6sEUsOM7EeucsYN8KSeWFw">
+                  <ownedParameter xmi:id="_6q9hceM7EeucsYN8KSeWFw" name="row" type="_6p3VQOM7EeucsYN8KSeWFw"/>
+                  <ownedParameter xmi:id="_6q-IgOM7EeucsYN8KSeWFw" name="val">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_6q-IgeM7EeucsYN8KSeWFw" name="col">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_6toa8OM7EeucsYN8KSeWFw" name="" memberEnd="_6toa8eM7EeucsYN8KSeWFw _6rcpoOM7EeucsYN8KSeWFw">
+                <ownedEnd xmi:id="_6toa8eM7EeucsYN8KSeWFw" name="" type="_6j4CAOM7EeucsYN8KSeWFw" association="_6toa8OM7EeucsYN8KSeWFw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_6tppEOM7EeucsYN8KSeWFw" name="" memberEnd="_6tppEeM7EeucsYN8KSeWFw _6rd3wOM7EeucsYN8KSeWFw">
+                <ownedEnd xmi:id="_6tppEeM7EeucsYN8KSeWFw" name="" type="_6j4CAOM7EeucsYN8KSeWFw" association="_6tppEOM7EeucsYN8KSeWFw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_6tq3MeM7EeucsYN8KSeWFw" name="" memberEnd="_6tq3MuM7EeucsYN8KSeWFw _6riJMOM7EeucsYN8KSeWFw">
+                <ownedEnd xmi:id="_6tq3MuM7EeucsYN8KSeWFw" name="" type="_6kK88OM7EeucsYN8KSeWFw" association="_6tq3MeM7EeucsYN8KSeWFw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_6tssYOM7EeucsYN8KSeWFw" name="" memberEnd="_6tssYeM7EeucsYN8KSeWFw _6rklceM7EeucsYN8KSeWFw">
+                <ownedEnd xmi:id="_6tssYeM7EeucsYN8KSeWFw" name="" type="_6kK88OM7EeucsYN8KSeWFw" association="_6tssYOM7EeucsYN8KSeWFw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_6tuhkeM7EeucsYN8KSeWFw" name="" memberEnd="_6tuhkuM7EeucsYN8KSeWFw _6rlzkeM7EeucsYN8KSeWFw">
+                <ownedEnd xmi:id="_6tuhkuM7EeucsYN8KSeWFw" name="" type="_6kK88OM7EeucsYN8KSeWFw" association="_6tuhkeM7EeucsYN8KSeWFw"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g3xUOM7EeucsYN8KSeWFw" name="mapper">
+            <packagedElement xmi:type="uml:Class" xmi:id="_6lPT8OM7EeucsYN8KSeWFw" name="GeoDataModel">
+              <ownedAttribute xmi:id="_6rz2AOM7EeucsYN8KSeWFw" name="anzsic06">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6r0dEOM7EeucsYN8KSeWFw" name="area">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6r1EIOM7EeucsYN8KSeWFw" name="year">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6r1EIeM7EeucsYN8KSeWFw" name="geoCount">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6r1rMOM7EeucsYN8KSeWFw" name="ecCount">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g8p0OM7EeucsYN8KSeWFw" name="config">
+            <packagedElement xmi:type="uml:Class" xmi:id="_6iuygOM7EeucsYN8KSeWFw" name="BatchFileProcessorConfig">
+              <ownedAttribute xmi:id="_6rOnMOM7EeucsYN8KSeWFw" name="logger" visibility="private" isStatic="true" type="_6ogqYOM7EeucsYN8KSeWFw" association="_6tkJgeM7EeucsYN8KSeWFw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rOnMeM7EeucsYN8KSeWFw" value="LoggerFactory.getLogger(BatchFileProcessorConfig.class)"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r4ugOM7EeucsYN8KSeWFw" name="readCSVFileJob" specification="_6qXrkOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r4ugeM7EeucsYN8KSeWFw" name="jobBuilderFactory" type="_6o0MYOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r4uguM7EeucsYN8KSeWFw" name="step" type="_6oxJEeM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r4ug-M7EeucsYN8KSeWFw" type="_6ov68OM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>return jobBuilderFactory.get(&quot;readCSVFileJob&quot;).incrementer(new RunIdIncrementer()).flow(step).end().build();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r5VkOM7EeucsYN8KSeWFw" name="step" specification="_6qaH0OM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r5VkeM7EeucsYN8KSeWFw" name="stepBuilderFactory" type="_6o2ooOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r5VkuM7EeucsYN8KSeWFw" name="compositeWriter" type="_6o-kceM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r5Vk-M7EeucsYN8KSeWFw" name="reader" type="_6o5E4eM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r5VlOM7EeucsYN8KSeWFw" name="excelWriter" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r5VleM7EeucsYN8KSeWFw" name="tabSeparatedText" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r5VluM7EeucsYN8KSeWFw" name="tabSeparatedCsv" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r5Vl-M7EeucsYN8KSeWFw" type="_6oxJEeM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>return stepBuilderFactory.get(&quot;step&quot;).&lt;GeoDataModel, GeoDataModel>chunk(BatchFileConstants.CHUNK_SIZE)&#xD;
+				.reader(reader).writer(compositeWriter).listener(excelWriter).listener(tabSeparatedText)&#xD;
+				.listener(tabSeparatedCsv)&#xD;
+				// .writer(excelWriter)&#xD;
+				.build();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r58oOM7EeucsYN8KSeWFw" name="reader" specification="_6i0SEOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r58oeM7EeucsYN8KSeWFw" name="inputFileName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r58ouM7EeucsYN8KSeWFw" type="_6o5E4eM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>logger.info(&quot;FlatFileItemReader :: inputfile : &quot; + inputFileName);&#xD;
+		FlatFileItemReader&lt;GeoDataModel> reader = new FlatFileItemReader&lt;GeoDataModel>();&#xD;
+		reader.setResource(new FileSystemResource(inputFileName));&#xD;
+		reader.setLinesToSkip(1);&#xD;
+		reader.setLineMapper(new DefaultLineMapper&lt;GeoDataModel>() {&#xD;
+			{&#xD;
+				setLineTokenizer(new DelimitedLineTokenizer() {&#xD;
+					{&#xD;
+						setNames(BatchFileConstants.colNames);&#xD;
+						logger.info(&quot;FlatFileItemReader :: column names : &quot;&#xD;
+								+ String.join(&quot;,&quot;, BatchFileConstants.colNames));&#xD;
+					}&#xD;
+				});&#xD;
+				setFieldSetMapper(new BeanWrapperFieldSetMapper&lt;GeoDataModel>() {&#xD;
+					{&#xD;
+						setTargetType(GeoDataModel.class);&#xD;
+					}&#xD;
+				});&#xD;
+			}&#xD;
+		});&#xD;
+		return reader;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r6jsOM7EeucsYN8KSeWFw" name="compositeWriter" specification="_6qfnYeM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r6jseM7EeucsYN8KSeWFw" name="xmlItemWriter" type="_6o_ykeM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r6jsuM7EeucsYN8KSeWFw" name="excelWriter" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r6js-M7EeucsYN8KSeWFw" name="tabSeparatedText" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r6jtOM7EeucsYN8KSeWFw" name="tabSeparatedCsv" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r6jteM7EeucsYN8KSeWFw" name="fileWriterFactory" type="_6ka0kOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6r6jtuM7EeucsYN8KSeWFw" type="_6o-kceM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>CompositeItemWriter&lt;GeoDataModel> writer = new CompositeItemWriter&lt;>();&#xD;
+		// Directly looping file type enum and invoking factory method for objects. It&#xD;
+		// can also be passed from user input via JOB Parameter&#xD;
+		writer.setDelegates(Stream.of(BatchFileConstants.FileTypes.values()).map(enumObj -> {&#xD;
+			// Invoking factory method&#xD;
+			try {&#xD;
+				return fileWriterFactory.getInstance(enumObj.name());&#xD;
+			} catch (IllegalAccessException e) {&#xD;
+				throw new RuntimeException(&#xD;
+						&quot;IllegalAccessException - No FileWriter Bean found for the type :: &quot; + enumObj.name());&#xD;
+			}&#xD;
+		}).collect(Collectors.toList()));&#xD;
+&#xD;
+		return writer;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r6jt-M7EeucsYN8KSeWFw" name="xmlItemWriter" specification="_6i8N4OM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r6juOM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r6jueM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r6juuM7EeucsYN8KSeWFw" type="_6o_ykeM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>String fileName = outputPath + jobId + &quot;_xml.xml&quot;;&#xD;
+		Map&lt;String, String> aliases = new HashMap&lt;String, String>();&#xD;
+		aliases.put(&quot;GeoData&quot;, &quot;com.hpe.interview.mapper.GeoDataModel&quot;);&#xD;
+		XStreamMarshaller marshaller = new XStreamMarshaller();&#xD;
+		marshaller.setAliases(aliases);&#xD;
+&#xD;
+		StaxEventItemWriter&lt;GeoDataModel> writer = new StaxEventItemWriter&lt;>();&#xD;
+		logger.info(&quot;StaxEventItemWriter :: inputfile : &quot; + fileName);&#xD;
+		writer.setResource(new FileSystemResource(fileName));&#xD;
+		writer.setRootTagName(&quot;GeoDatas&quot;);&#xD;
+		writer.setMarshaller(marshaller);&#xD;
+		writer.setOverwriteOutput(true);&#xD;
+		return writer;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r7KwOM7EeucsYN8KSeWFw" name="excelWriter" specification="_6jC7kOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r7KweM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r7KwuM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r7Kw-M7EeucsYN8KSeWFw" type="_6kHSkOM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>return new ExcelWriterImpl(BatchFileConstants.xmlFileNameSuffix, outputPath + jobId);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r7x0OM7EeucsYN8KSeWFw" name="tabSeparatedText" specification="_6jIbIOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r7x0eM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r7x0uM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r7x0-M7EeucsYN8KSeWFw" type="_6kHSkOM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>return new CommonFlatFileWriterImpl(BatchFileConstants.tabDelimiter, &quot;_tab&quot; + BatchFileConstants.txtFileNameSuffix,&#xD;
+				outputPath + jobId);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r8Y4OM7EeucsYN8KSeWFw" name="tabSeparatedCsv" specification="_6jNToOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r8Y4eM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r8Y4uM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6r8Y4-M7EeucsYN8KSeWFw" type="_6kHSkOM7EeucsYN8KSeWFw" direction="return"/>
+                <language>java</language>
+                <body>return new CommonFlatFileWriterImpl(BatchFileConstants.tabDelimiter, &quot;_tab&quot; + BatchFileConstants.csvFileNameSuffix,&#xD;
+				outputPath + jobId);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_6i0SEOM7EeucsYN8KSeWFw" name="reader" method="_6r58oOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6i0SEeM7EeucsYN8KSeWFw" name="inputFileName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6qdyMuM7EeucsYN8KSeWFw" type="_6o5E4eM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_6i8N4OM7EeucsYN8KSeWFw" name="xmlItemWriter" method="_6r6jt-M7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6i8N4eM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6i808OM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6qj40OM7EeucsYN8KSeWFw" type="_6o_ykeM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_6jC7kOM7EeucsYN8KSeWFw" name="excelWriter" method="_6r7KwOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6jDioOM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6jEJsOM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6pJjkOM7EeucsYN8KSeWFw" type="_6kHSkOM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_6jIbIOM7EeucsYN8KSeWFw" name="tabSeparatedText" method="_6r7x0OM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6jIbIeM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6jJCMOM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6pKKoOM7EeucsYN8KSeWFw" type="_6kHSkOM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_6jNToOM7EeucsYN8KSeWFw" name="tabSeparatedCsv" method="_6r8Y4OM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6jNToeM7EeucsYN8KSeWFw" name="outputPath">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6jNTouM7EeucsYN8KSeWFw" name="jobId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_6pKxsOM7EeucsYN8KSeWFw" type="_6kHSkOM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_6qXrkOM7EeucsYN8KSeWFw" name="readCSVFileJob" method="_6r4ugOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6qXrkeM7EeucsYN8KSeWFw" name="jobBuilderFactory" type="_6o0MYOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qXrkuM7EeucsYN8KSeWFw" name="step" type="_6oxJEeM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qYSoOM7EeucsYN8KSeWFw" type="_6ov68OM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_6qaH0OM7EeucsYN8KSeWFw" name="step" method="_6r5VkOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6qaH0eM7EeucsYN8KSeWFw" name="stepBuilderFactory" type="_6o2ooOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qaH0uM7EeucsYN8KSeWFw" name="compositeWriter" type="_6o-kceM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qaH0-M7EeucsYN8KSeWFw" name="reader" type="_6o5E4eM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qaH1OM7EeucsYN8KSeWFw" name="excelWriter" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qaH1eM7EeucsYN8KSeWFw" name="tabSeparatedText" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qaH1uM7EeucsYN8KSeWFw" name="tabSeparatedCsv" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qau4OM7EeucsYN8KSeWFw" type="_6oxJEeM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_6qfnYeM7EeucsYN8KSeWFw" name="compositeWriter" method="_6r6jsOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6qfnYuM7EeucsYN8KSeWFw" name="xmlItemWriter" type="_6o_ykeM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qfnY-M7EeucsYN8KSeWFw" name="excelWriter" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qgOcOM7EeucsYN8KSeWFw" name="tabSeparatedText" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qgOceM7EeucsYN8KSeWFw" name="tabSeparatedCsv" type="_6kHSkOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qgOcuM7EeucsYN8KSeWFw" name="fileWriterFactory" type="_6ka0kOM7EeucsYN8KSeWFw"/>
+                <ownedParameter xmi:id="_6qhckeM7EeucsYN8KSeWFw" type="_6o-kceM7EeucsYN8KSeWFw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_6tkJgeM7EeucsYN8KSeWFw" name="" memberEnd="_6tkJguM7EeucsYN8KSeWFw _6rOnMOM7EeucsYN8KSeWFw">
+              <ownedEnd xmi:id="_6tkJguM7EeucsYN8KSeWFw" name="" type="_6iuygOM7EeucsYN8KSeWFw" association="_6tkJgeM7EeucsYN8KSeWFw"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6hFMsOM7EeucsYN8KSeWFw" name="controller">
+            <packagedElement xmi:type="uml:Class" xmi:id="_6jsb0OM7EeucsYN8KSeWFw" name="RestController">
+              <ownedAttribute xmi:id="_6rXKEOM7EeucsYN8KSeWFw" name="logger" visibility="private" isStatic="true" type="_6ogqYOM7EeucsYN8KSeWFw" association="_6tlXoOM7EeucsYN8KSeWFw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rXxIOM7EeucsYN8KSeWFw" value="LoggerFactory.getLogger(RestController.class)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_6rYYMOM7EeucsYN8KSeWFw" name="jobLauncher" visibility="package" type="_6pVJwOM7EeucsYN8KSeWFw" association="_6tl-seM7EeucsYN8KSeWFw"/>
+              <ownedAttribute xmi:id="_6raNYOM7EeucsYN8KSeWFw" name="job" visibility="package" type="_6ov68OM7EeucsYN8KSeWFw" association="_6tnM0eM7EeucsYN8KSeWFw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r9nAOM7EeucsYN8KSeWFw" name="getEmployees" specification="_6jvfIOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6r9nAeM7EeucsYN8KSeWFw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>ExecutorService executorService = Executors.newSingleThreadExecutor();&#xD;
+		final String jobId = String.valueOf(System.currentTimeMillis());&#xD;
+		executorService.execute(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					logger.info(&quot;Scheduling JOB for ::&quot; + jobId);&#xD;
+					JobParameters params = new JobParametersBuilder().addString(&quot;JobID&quot;, jobId).toJobParameters();&#xD;
+					jobLauncher.run(job, params);&#xD;
+				} catch (Exception e) {&#xD;
+					// TODO Auto-generated catch block&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+&#xD;
+		executorService.shutdown();&#xD;
+		return &quot;Job(&quot; + jobId + &quot;) scheduled, please check the logs&quot;;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_6jvfIOM7EeucsYN8KSeWFw" name="getEmployees" method="_6r9nAOM7EeucsYN8KSeWFw">
+                <ownedParameter xmi:id="_6jwGMOM7EeucsYN8KSeWFw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_6tlXoOM7EeucsYN8KSeWFw" name="" memberEnd="_6tlXoeM7EeucsYN8KSeWFw _6rXKEOM7EeucsYN8KSeWFw">
+              <ownedEnd xmi:id="_6tlXoeM7EeucsYN8KSeWFw" name="" type="_6jsb0OM7EeucsYN8KSeWFw" association="_6tlXoOM7EeucsYN8KSeWFw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_6tl-seM7EeucsYN8KSeWFw" name="" memberEnd="_6tl-suM7EeucsYN8KSeWFw _6rYYMOM7EeucsYN8KSeWFw">
+              <ownedEnd xmi:id="_6tl-suM7EeucsYN8KSeWFw" name="" type="_6jsb0OM7EeucsYN8KSeWFw" association="_6tl-seM7EeucsYN8KSeWFw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_6tnM0eM7EeucsYN8KSeWFw" name="" memberEnd="_6tnM0uM7EeucsYN8KSeWFw _6raNYOM7EeucsYN8KSeWFw">
+              <ownedEnd xmi:id="_6tnM0uM7EeucsYN8KSeWFw" name="" type="_6jsb0OM7EeucsYN8KSeWFw" association="_6tnM0eM7EeucsYN8KSeWFw"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6h2owOM7EeucsYN8KSeWFw" name="fileprocessorinterview">
+            <packagedElement xmi:type="uml:Class" xmi:id="_6lVakOM7EeucsYN8KSeWFw" name="FileProcessorInterviewApplicationTests" visibility="package">
+              <eAnnotations xmi:id="_6lWosOM7EeucsYN8KSeWFw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_6lWoseM7EeucsYN8KSeWFw" source="codegen">
+                  <details xmi:id="_6lWosuM7EeucsYN8KSeWFw" key="codegenDirectory" value="/file-processor-interview/src/test/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedOperation xmi:id="_6lX20eM7EeucsYN8KSeWFw" name="contextLoads" visibility="package"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_6ilBgOM7EeucsYN8KSeWFw" name="BatchFileProcessorInterviewApplication">
+            <ownedAttribute xmi:id="_6rMyAOM7EeucsYN8KSeWFw" name="logger" visibility="private" isStatic="true" type="_6ogqYOM7EeucsYN8KSeWFw" association="_6ti7YOM7EeucsYN8KSeWFw">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_6rNZEOM7EeucsYN8KSeWFw" value="LoggerFactory.getLogger(BatchFileProcessorInterviewApplication.class)"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6r4HcOM7EeucsYN8KSeWFw" name="main" specification="_6iqhEOM7EeucsYN8KSeWFw">
+              <ownedParameter xmi:id="_6r4HceM7EeucsYN8KSeWFw" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6r4HcuM7EeucsYN8KSeWFw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>logger.info(&quot;Starting File Processing application...&quot;);
+		SpringApplication.run(BatchFileProcessorInterviewApplication.class, args);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_6iqhEOM7EeucsYN8KSeWFw" name="main" isStatic="true" method="_6r4HcOM7EeucsYN8KSeWFw">
+              <ownedComment xmi:id="_6sJNMuM7EeucsYN8KSeWFw">
+                <body>@param args - Command Arguments if any</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_6iqhEeM7EeucsYN8KSeWFw" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6irIIeM7EeucsYN8KSeWFw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_6ti7YOM7EeucsYN8KSeWFw" name="" memberEnd="_6ti7YeM7EeucsYN8KSeWFw _6rMyAOM7EeucsYN8KSeWFw">
+            <ownedEnd xmi:id="_6ti7YeM7EeucsYN8KSeWFw" name="" type="_6ilBgOM7EeucsYN8KSeWFw" association="_6ti7YOM7EeucsYN8KSeWFw"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6gpu4OM7EeucsYN8KSeWFw" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6gpu4eM7EeucsYN8KSeWFw" name="slf4j">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_6ogqYOM7EeucsYN8KSeWFw" name="Logger"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6oh4geM7EeucsYN8KSeWFw" name="LoggerFactory"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6gqV8OM7EeucsYN8KSeWFw" name="springframework">
+        <packagedElement xmi:type="uml:Package" xmi:id="_6gqV8eM7EeucsYN8KSeWFw" name="boot">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6gqV8uM7EeucsYN8KSeWFw" name="autoconfigure">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6gq9AOM7EeucsYN8KSeWFw" name="jdbc">
+              <packagedElement xmi:type="uml:Class" xmi:id="_6onYEOM7EeucsYN8KSeWFw" name="DataSourceAutoConfiguration"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6grkEOM7EeucsYN8KSeWFw" name="orm">
+              <packagedElement xmi:type="uml:Package" xmi:id="_6gsLIOM7EeucsYN8KSeWFw" name="jpa">
+                <packagedElement xmi:type="uml:Class" xmi:id="_6oomMOM7EeucsYN8KSeWFw" name="HibernateJpaAutoConfiguration"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6okUweM7EeucsYN8KSeWFw" name="EnableAutoConfiguration"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6oli4eM7EeucsYN8KSeWFw" name="SpringBootApplication"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6h0zkOM7EeucsYN8KSeWFw" name="test">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6h0zkeM7EeucsYN8KSeWFw" name="context">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6qNTgOM7EeucsYN8KSeWFw" name="SpringBootTest"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_6ojGoeM7EeucsYN8KSeWFw" name="SpringApplication"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6gv1gOM7EeucsYN8KSeWFw" name="batch">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6gv1geM7EeucsYN8KSeWFw" name="core">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6gwckOM7EeucsYN8KSeWFw" name="configuration">
+              <packagedElement xmi:type="uml:Package" xmi:id="_6gxDoOM7EeucsYN8KSeWFw" name="annotation">
+                <packagedElement xmi:type="uml:Interface" xmi:id="_6oyXMeM7EeucsYN8KSeWFw" name="EnableBatchProcessing"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_6o0MYOM7EeucsYN8KSeWFw" name="JobBuilderFactory"/>
+                <packagedElement xmi:type="uml:Interface" xmi:id="_6o1agOM7EeucsYN8KSeWFw" name="JobScope"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_6o2ooOM7EeucsYN8KSeWFw" name="StepBuilderFactory"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6gxqsOM7EeucsYN8KSeWFw" name="launch">
+              <packagedElement xmi:type="uml:Package" xmi:id="_6gxqseM7EeucsYN8KSeWFw" name="support">
+                <packagedElement xmi:type="uml:Class" xmi:id="_6o32wOM7EeucsYN8KSeWFw" name="RunIdIncrementer"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6pVJwOM7EeucsYN8KSeWFw" name="JobLauncher"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6hCwcOM7EeucsYN8KSeWFw" name="repository"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6hKsQOM7EeucsYN8KSeWFw" name="annotation">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6ppS0OM7EeucsYN8KSeWFw" name="AfterStep"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6pqg8OM7EeucsYN8KSeWFw" name="BeforeStep"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6ov68OM7EeucsYN8KSeWFw" name="Job"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6oxJEeM7EeucsYN8KSeWFw" name="Step"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_6pRfYeM7EeucsYN8KSeWFw" name="JobParameters"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_6pStgeM7EeucsYN8KSeWFw" name="JobParametersBuilder"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_6pilIOM7EeucsYN8KSeWFw" name="StepExecution"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6gxqsuM7EeucsYN8KSeWFw" name="item">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6gxqs-M7EeucsYN8KSeWFw" name="file">
+              <packagedElement xmi:type="uml:Package" xmi:id="_6gyRwOM7EeucsYN8KSeWFw" name="mapping">
+                <packagedElement xmi:type="uml:Class" xmi:id="_6o6TAeM7EeucsYN8KSeWFw" name="BeanWrapperFieldSetMapper"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_6o8IMOM7EeucsYN8KSeWFw" name="DefaultLineMapper"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_6gyRweM7EeucsYN8KSeWFw" name="transform">
+                <packagedElement xmi:type="uml:Class" xmi:id="_6o9WUeM7EeucsYN8KSeWFw" name="DelimitedLineTokenizer"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_6o5E4eM7EeucsYN8KSeWFw" name="FlatFileItemReader"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6g0G8OM7EeucsYN8KSeWFw" name="support">
+              <packagedElement xmi:type="uml:Class" xmi:id="_6o-kceM7EeucsYN8KSeWFw" name="CompositeItemWriter"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_6g0G8eM7EeucsYN8KSeWFw" name="xml">
+              <packagedElement xmi:type="uml:Class" xmi:id="_6o_ykeM7EeucsYN8KSeWFw" name="StaxEventItemWriter"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6prvEeM7EeucsYN8KSeWFw" name="ItemWriter"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6g0uAOM7EeucsYN8KSeWFw" name="beans">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g0uAeM7EeucsYN8KSeWFw" name="factory">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6g0uAuM7EeucsYN8KSeWFw" name="annotation">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6pBnwOM7EeucsYN8KSeWFw" name="Value"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6pZbMeM7EeucsYN8KSeWFw" name="Autowired"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6g0uA-M7EeucsYN8KSeWFw" name="context">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g1VEOM7EeucsYN8KSeWFw" name="annotation">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6pC14eM7EeucsYN8KSeWFw" name="Bean"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6pEEAeM7EeucsYN8KSeWFw" name="Configuration"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6g1VEeM7EeucsYN8KSeWFw" name="core">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g1VEuM7EeucsYN8KSeWFw" name="io">
+            <packagedElement xmi:type="uml:Class" xmi:id="_6pFSIeM7EeucsYN8KSeWFw" name="FileSystemResource"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6g1VE-M7EeucsYN8KSeWFw" name="oxm">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6g1VFOM7EeucsYN8KSeWFw" name="xstream">
+            <packagedElement xmi:type="uml:Class" xmi:id="_6pHHUOM7EeucsYN8KSeWFw" name="XStreamMarshaller"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6hCwceM7EeucsYN8KSeWFw" name="web">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6hDXgOM7EeucsYN8KSeWFw" name="bind">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6hDXgeM7EeucsYN8KSeWFw" name="annotation">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6papUOM7EeucsYN8KSeWFw" name="GetMapping"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6pbQYeM7EeucsYN8KSeWFw" name="RequestMapping"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6hbK8OM7EeucsYN8KSeWFw" name="stereotype">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_6qGl0OM7EeucsYN8KSeWFw" name="Component"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6hMhcOM7EeucsYN8KSeWFw" name="apache">
+        <packagedElement xmi:type="uml:Package" xmi:id="_6hNIgOM7EeucsYN8KSeWFw" name="poi">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6hNIgeM7EeucsYN8KSeWFw" name="ss">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6hNIguM7EeucsYN8KSeWFw" name="usermodel">
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6pxOoOM7EeucsYN8KSeWFw" name="Cell"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6pycwOM7EeucsYN8KSeWFw" name="CellStyle"/>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_6pzq4OM7EeucsYN8KSeWFw" name="CellType"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6p05AOM7EeucsYN8KSeWFw" name="Font"/>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_6p2HIOM7EeucsYN8KSeWFw" name="HorizontalAlignment"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6p3VQOM7EeucsYN8KSeWFw" name="Row"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6p38UeM7EeucsYN8KSeWFw" name="Sheet"/>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_6p5KceM7EeucsYN8KSeWFw" name="Workbook"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_6hNIg-M7EeucsYN8KSeWFw" name="xssf">
+            <packagedElement xmi:type="uml:Package" xmi:id="_6hNvkOM7EeucsYN8KSeWFw" name="streaming">
+              <packagedElement xmi:type="uml:Class" xmi:id="_6p7msOM7EeucsYN8KSeWFw" name="SXSSFWorkbook"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6hyXUOM7EeucsYN8KSeWFw" name="junit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_6hyXUeM7EeucsYN8KSeWFw" name="jupiter">
+          <packagedElement xmi:type="uml:Package" xmi:id="_6hy-YOM7EeucsYN8KSeWFw" name="api">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_6qLeUOM7EeucsYN8KSeWFw" name="Test"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6gunYOM7EeucsYN8KSeWFw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6gvOcOM7EeucsYN8KSeWFw" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_6gvOceM7EeucsYN8KSeWFw" name="stream">
+          <packagedElement xmi:type="uml:Class" xmi:id="_6otesOM7EeucsYN8KSeWFw" name="Collectors"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_6ous0OM7EeucsYN8KSeWFw" name="Stream"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_6hBiUOM7EeucsYN8KSeWFw" name="concurrent">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_6pPqMOM7EeucsYN8KSeWFw" name="ExecutorService"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_6pQ4UOM7EeucsYN8KSeWFw" name="Executors"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6oqbYOM7EeucsYN8KSeWFw" name="HashMap"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_6orpgeM7EeucsYN8KSeWFw" name="Map"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_6phXAeM7EeucsYN8KSeWFw" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6qC7cOM7EeucsYN8KSeWFw" name="Optional"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6hGa0OM7EeucsYN8KSeWFw" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_6pfh0OM7EeucsYN8KSeWFw" name="FileWriter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6pgv8OM7EeucsYN8KSeWFw" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6puyYOM7EeucsYN8KSeWFw" name="FileOutputStream"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6qeZQOM7EeucsYN8KSeWFw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_6rCZ8OM7EeucsYN8KSeWFw" name="Object"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6hZ80OM7EeucsYN8KSeWFw" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6hZ80eM7EeucsYN8KSeWFw" name="annotation">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_6qEwoeM7EeucsYN8KSeWFw" name="PostConstruct"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_6PhioOM7EeucsYN8KSeWFw">
+      <eAnnotations xmi:id="_6PhioeM7EeucsYN8KSeWFw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_6PiwwOM7EeucsYN8KSeWFw" base_Package="_6ELOQOM7EeucsYN8KSeWFw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6indwOM7EeucsYN8KSeWFw" base_Element="_6ilBgOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:StyledElement xmi:id="_6irIIOM7EeucsYN8KSeWFw" base_Element="_6iqhEOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6isWQOM7EeucsYN8KSeWFw" base_Element="_6ilBgOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6isWQeM7EeucsYN8KSeWFw" name="SpringBootApplication"/>
+    <annotations xmi:id="_6is9UOM7EeucsYN8KSeWFw" name="EnableAutoConfiguration">
+      <annotationParameters xmi:id="_6is9UeM7EeucsYN8KSeWFw" name="exclude">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sJNMOM7EeucsYN8KSeWFw" value="DataSourceAutoConfiguration.class"/>
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sJNMeM7EeucsYN8KSeWFw" value="HibernateJpaAutoConfiguration.class"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6ixOwOM7EeucsYN8KSeWFw" base_Element="_6iuygOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Generics xmi:id="_6i2uUOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6i0SEOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6i3VYOM7EeucsYN8KSeWFw" base_Element="_6i0SEeM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6i38cOM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6i38ceM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sJ0QOM7EeucsYN8KSeWFw" value="&quot;${input.file}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6i4jgOM7EeucsYN8KSeWFw" base_Element="_6i0SEOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6i4jgeM7EeucsYN8KSeWFw" name="Bean"/>
+    <annotations xmi:id="_6i5KkOM7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_6i-qIOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6i8N4OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6i_RMOM7EeucsYN8KSeWFw" base_Element="_6i8N4eM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6i_4QOM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6i_4QeM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sLCYeM7EeucsYN8KSeWFw" value="&quot;${output.path}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jAfUOM7EeucsYN8KSeWFw" base_Element="_6i808OM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jAfUeM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6jAfUuM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sLCYuM7EeucsYN8KSeWFw" value="&quot;#{jobParameters['JobID']}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jBtcOM7EeucsYN8KSeWFw" base_Element="_6i8N4OM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jBtceM7EeucsYN8KSeWFw" name="Bean">
+      <annotationParameters xmi:id="_6jBtcuM7EeucsYN8KSeWFw" name="destroyMethod" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sLCYOM7EeucsYN8KSeWFw" value="&quot;&quot;"/>
+      </annotationParameters>
+    </annotations>
+    <annotations xmi:id="_6jBtc-M7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jFX0OM7EeucsYN8KSeWFw" base_Element="_6jDioOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jFX0eM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6jFX0uM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sLpcOM7EeucsYN8KSeWFw" value="&quot;${output.path}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jGl8OM7EeucsYN8KSeWFw" base_Element="_6jEJsOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jGl8eM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6jGl8uM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sLpceM7EeucsYN8KSeWFw" value="&quot;#{jobParameters['JobID']}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jHNAOM7EeucsYN8KSeWFw" base_Element="_6jC7kOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jHNAeM7EeucsYN8KSeWFw" name="Bean"/>
+    <annotations xmi:id="_6jH0EOM7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jJpQOM7EeucsYN8KSeWFw" base_Element="_6jIbIeM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jKQUOM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6jKQUeM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sLpcuM7EeucsYN8KSeWFw" value="&quot;${output.path}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jK3YOM7EeucsYN8KSeWFw" base_Element="_6jJCMOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jK3YeM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6jLecOM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sLpc-M7EeucsYN8KSeWFw" value="&quot;#{jobParameters['JobID']}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jMFgOM7EeucsYN8KSeWFw" base_Element="_6jIbIOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jMFgeM7EeucsYN8KSeWFw" name="Bean"/>
+    <annotations xmi:id="_6jMFguM7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jPI0OM7EeucsYN8KSeWFw" base_Element="_6jNToeM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jPI0eM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6jPI0uM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sMQgOM7EeucsYN8KSeWFw" value="&quot;${output.path}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jPv4OM7EeucsYN8KSeWFw" base_Element="_6jNTouM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jQW8OM7EeucsYN8KSeWFw" name="Value">
+      <annotationParameters xmi:id="_6jQW8eM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sMQgeM7EeucsYN8KSeWFw" value="&quot;#{jobParameters['JobID']}&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jQ-AOM7EeucsYN8KSeWFw" base_Element="_6jNToOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jQ-AeM7EeucsYN8KSeWFw" name="Bean"/>
+    <annotations xmi:id="_6jQ-AuM7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jSMIOM7EeucsYN8KSeWFw" base_Element="_6iuygOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jSzMOM7EeucsYN8KSeWFw" name="Configuration"/>
+    <annotations xmi:id="_6jSzMeM7EeucsYN8KSeWFw" name="EnableBatchProcessing"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6ju4EOM7EeucsYN8KSeWFw" base_Element="_6jsb0OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6jwtQOM7EeucsYN8KSeWFw" base_Element="_6jvfIOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jwtQeM7EeucsYN8KSeWFw" name="GetMapping">
+      <annotationParameters xmi:id="_6jwtQuM7EeucsYN8KSeWFw" name="path" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sM3kOM7EeucsYN8KSeWFw" value="&quot;launchJob&quot;"/>
+      </annotationParameters>
+      <annotationParameters xmi:id="_6jwtQ-M7EeucsYN8KSeWFw" name="produces" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sM3keM7EeucsYN8KSeWFw" value="&quot;application/json&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6jx7YOM7EeucsYN8KSeWFw" base_Element="_6jsb0OM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6jx7YeM7EeucsYN8KSeWFw" name="org.springframework.web.bind.annotation.RestController"/>
+    <annotations xmi:id="_6jyicOM7EeucsYN8KSeWFw" name="RequestMapping">
+      <annotationParameters xmi:id="_6jyiceM7EeucsYN8KSeWFw" name="path" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sMQg-M7EeucsYN8KSeWFw" value="&quot;/&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_6kd34OM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6kcCsOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6kklkOM7EeucsYN8KSeWFw" base_Element="_6kjXcOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Generics xmi:id="_6koP8OM7EeucsYN8KSeWFw" genericsValue="String, Object" base_Element="_6kmawOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6kpeEOM7EeucsYN8KSeWFw" base_Element="_6kmawOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6kpeEeM7EeucsYN8KSeWFw" name="Override"/>
+    <annotations xmi:id="_6kpeEuM7EeucsYN8KSeWFw" name="PostConstruct"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_6kshYOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6kqsMOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6lB4kOM7EeucsYN8KSeWFw" base_Element="_6kqsMOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6lB4keM7EeucsYN8KSeWFw" name="Override"/>
+    <annotations xmi:id="_6lB4kuM7EeucsYN8KSeWFw" name="SuppressWarnings">
+      <annotationParameters xmi:id="_6lCfoOM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6tbmoOM7EeucsYN8KSeWFw" value="&quot;unchecked&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6lDtwOM7EeucsYN8KSeWFw" base_Element="_6kjXcOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6lEU0OM7EeucsYN8KSeWFw" name="Component"/>
+    <annotations xmi:id="_6lEU0eM7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6lX20OM7EeucsYN8KSeWFw" base_Element="_6lVakOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6lZE8OM7EeucsYN8KSeWFw" base_Element="_6lX20eM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6lZE8eM7EeucsYN8KSeWFw" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6lZsAOM7EeucsYN8KSeWFw" base_Element="_6lVakOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6laTEOM7EeucsYN8KSeWFw" name="SpringBootTest"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_6oh4gOM7EeucsYN8KSeWFw" base_Element="_6ogqYOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6ojGoOM7EeucsYN8KSeWFw" base_Element="_6oh4geM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6okUwOM7EeucsYN8KSeWFw" base_Element="_6ojGoeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6oli4OM7EeucsYN8KSeWFw" base_Element="_6okUweM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6omxAOM7EeucsYN8KSeWFw" base_Element="_6oli4eM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6on_IOM7EeucsYN8KSeWFw" base_Element="_6onYEOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6opNQOM7EeucsYN8KSeWFw" base_Element="_6oomMOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6orpgOM7EeucsYN8KSeWFw" base_Element="_6oqbYOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6os3oOM7EeucsYN8KSeWFw" base_Element="_6orpgeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6ouFwOM7EeucsYN8KSeWFw" base_Element="_6otesOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6ovT4OM7EeucsYN8KSeWFw" base_Element="_6ous0OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6oxJEOM7EeucsYN8KSeWFw" base_Element="_6ov68OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6oyXMOM7EeucsYN8KSeWFw" base_Element="_6oxJEeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6ozlUOM7EeucsYN8KSeWFw" base_Element="_6oyXMeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o0zcOM7EeucsYN8KSeWFw" base_Element="_6o0MYOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o2BkOM7EeucsYN8KSeWFw" base_Element="_6o1agOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o3PsOM7EeucsYN8KSeWFw" base_Element="_6o2ooOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o5E4OM7EeucsYN8KSeWFw" base_Element="_6o32wOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o6TAOM7EeucsYN8KSeWFw" base_Element="_6o5E4eM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o7hIOM7EeucsYN8KSeWFw" base_Element="_6o6TAeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o9WUOM7EeucsYN8KSeWFw" base_Element="_6o8IMOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o-kcOM7EeucsYN8KSeWFw" base_Element="_6o9WUeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6o_ykOM7EeucsYN8KSeWFw" base_Element="_6o-kceM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pBAsOM7EeucsYN8KSeWFw" base_Element="_6o_ykeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pC14OM7EeucsYN8KSeWFw" base_Element="_6pBnwOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pEEAOM7EeucsYN8KSeWFw" base_Element="_6pC14eM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pFSIOM7EeucsYN8KSeWFw" base_Element="_6pEEAeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pGgQOM7EeucsYN8KSeWFw" base_Element="_6pFSIeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pHuYOM7EeucsYN8KSeWFw" base_Element="_6pHHUOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pQRQOM7EeucsYN8KSeWFw" base_Element="_6pPqMOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pRfYOM7EeucsYN8KSeWFw" base_Element="_6pQ4UOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pStgOM7EeucsYN8KSeWFw" base_Element="_6pRfYeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pTUkOM7EeucsYN8KSeWFw" base_Element="_6pStgeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pVw0OM7EeucsYN8KSeWFw" base_Element="_6pVJwOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6paCQOM7EeucsYN8KSeWFw" base_Element="_6pZbMeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pbQYOM7EeucsYN8KSeWFw" base_Element="_6papUOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pb3cOM7EeucsYN8KSeWFw" base_Element="_6pbQYeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pgI4OM7EeucsYN8KSeWFw" base_Element="_6pfh0OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6phXAOM7EeucsYN8KSeWFw" base_Element="_6pgv8OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6ph-EOM7EeucsYN8KSeWFw" base_Element="_6phXAeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pjMMOM7EeucsYN8KSeWFw" base_Element="_6pilIOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pp54OM7EeucsYN8KSeWFw" base_Element="_6ppS0OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6prvEOM7EeucsYN8KSeWFw" base_Element="_6pqg8OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6ps9MOM7EeucsYN8KSeWFw" base_Element="_6prvEeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pwnkOM7EeucsYN8KSeWFw" base_Element="_6puyYOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6px1sOM7EeucsYN8KSeWFw" base_Element="_6pxOoOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6pzD0OM7EeucsYN8KSeWFw" base_Element="_6pycwOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6p0R8OM7EeucsYN8KSeWFw" base_Element="_6pzq4OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6p1gEOM7EeucsYN8KSeWFw" base_Element="_6p05AOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6p2uMOM7EeucsYN8KSeWFw" base_Element="_6p2HIOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6p38UOM7EeucsYN8KSeWFw" base_Element="_6p3VQOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6p5KcOM7EeucsYN8KSeWFw" base_Element="_6p38UeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6p6_oOM7EeucsYN8KSeWFw" base_Element="_6p5KceM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6p8NwOM7EeucsYN8KSeWFw" base_Element="_6p7msOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6qEwoOM7EeucsYN8KSeWFw" base_Element="_6qC7cOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6qF-wOM7EeucsYN8KSeWFw" base_Element="_6qEwoeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6qHM4OM7EeucsYN8KSeWFw" base_Element="_6qGl0OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6qMscOM7EeucsYN8KSeWFw" base_Element="_6qLeUOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6qN6kOM7EeucsYN8KSeWFw" base_Element="_6qNTgOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6qY5sOM7EeucsYN8KSeWFw" base_Element="_6qXrkOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6qZgwOM7EeucsYN8KSeWFw" name="Bean"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_6qb9AOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6qaH0uM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Generics xmi:id="_6qckEOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6qaH0-M7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6qdLIOM7EeucsYN8KSeWFw" base_Element="_6qaH0OM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6qdyMOM7EeucsYN8KSeWFw" name="Bean"/>
+    <annotations xmi:id="_6qdyMeM7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_6qhckOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6qfnYeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Generics xmi:id="_6qiqsOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6qfnYuM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6qjRwOM7EeucsYN8KSeWFw" base_Element="_6qfnYeM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6qjRweM7EeucsYN8KSeWFw" name="Bean">
+      <annotationParameters xmi:id="_6qjRwuM7EeucsYN8KSeWFw" name="destroyMethod" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sKbUOM7EeucsYN8KSeWFw" value="&quot;&quot;"/>
+      </annotationParameters>
+    </annotations>
+    <annotations xmi:id="_6qjRw-M7EeucsYN8KSeWFw" name="JobScope"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6qp_cOM7EeucsYN8KSeWFw" base_Element="_6qoxUOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6qp_ceM7EeucsYN8KSeWFw" base_Element="_6qoxUOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6qp_cuM7EeucsYN8KSeWFw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6qrNkOM7EeucsYN8KSeWFw" base_Element="_6qqmgOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Generics xmi:id="_6qr0oOM7EeucsYN8KSeWFw" genericsValue="? extends GeoDataModel" base_Element="_6qqmgeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6qsbsOM7EeucsYN8KSeWFw" base_Element="_6qqmgOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6qsbseM7EeucsYN8KSeWFw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6qtp0OM7EeucsYN8KSeWFw" base_Element="_6qtCwOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6quQ4OM7EeucsYN8KSeWFw" base_Element="_6qtCwOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6quQ4eM7EeucsYN8KSeWFw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_6qwGEOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6qvfAOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6qxUMOM7EeucsYN8KSeWFw" base_Element="_6qwtIOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6qx7QOM7EeucsYN8KSeWFw" base_Element="_6qwtIOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6qx7QeM7EeucsYN8KSeWFw" name="BeforeStep"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6qzJYOM7EeucsYN8KSeWFw" base_Element="_6qyiUOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6qzwcOM7EeucsYN8KSeWFw" base_Element="_6qyiUOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6qzwceM7EeucsYN8KSeWFw" name="AfterStep"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6q2zwOM7EeucsYN8KSeWFw" base_Element="_6q2MsOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6q3a0OM7EeucsYN8KSeWFw" base_Element="_6q2MsOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6q3a0eM7EeucsYN8KSeWFw" name="BeforeStep"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6q5QAOM7EeucsYN8KSeWFw" base_Element="_6q4o8OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Generics xmi:id="_6q53EOM7EeucsYN8KSeWFw" genericsValue="? extends GeoDataModel" base_Element="_6q4o8eM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6q6eIOM7EeucsYN8KSeWFw" base_Element="_6q4o8OM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6q7FMOM7EeucsYN8KSeWFw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6q7sQOM7EeucsYN8KSeWFw" base_Element="_6q7FMeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6q8TUOM7EeucsYN8KSeWFw" base_Element="_6q7FMeM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6q8TUeM7EeucsYN8KSeWFw" name="AfterStep"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6q-vkOM7EeucsYN8KSeWFw" base_Element="_6q9hcOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6q_WoOM7EeucsYN8KSeWFw" base_Element="_6q9hcOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6q_WoeM7EeucsYN8KSeWFw" name="SuppressWarnings">
+      <annotationParameters xmi:id="_6q_9sOM7EeucsYN8KSeWFw" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_6sNeoOM7EeucsYN8KSeWFw" value="&quot;deprecation&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_6rDBAOM7EeucsYN8KSeWFw" base_Element="_6rCZ8OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Array xmi:id="_6rRqgeM7EeucsYN8KSeWFw" base_Element="_6rRDcOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6rZmUOM7EeucsYN8KSeWFw" base_Element="_6rYYMOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6rZmUeM7EeucsYN8KSeWFw" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6ra0cOM7EeucsYN8KSeWFw" base_Element="_6raNYOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6rbbgOM7EeucsYN8KSeWFw" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rdQsOM7EeucsYN8KSeWFw" base_Element="_6rcpoOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6ree0OM7EeucsYN8KSeWFw" base_Element="_6rd3wOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rfF4OM7EeucsYN8KSeWFw" base_Element="_6ree0eM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rgUAOM7EeucsYN8KSeWFw" base_Element="_6rfs8OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rg7EeM7EeucsYN8KSeWFw" base_Element="_6rgUAeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rjXUOM7EeucsYN8KSeWFw" base_Element="_6riJMOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rklcOM7EeucsYN8KSeWFw" base_Element="_6rj-YOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rlzkOM7EeucsYN8KSeWFw" base_Element="_6rklceM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rmaoOM7EeucsYN8KSeWFw" base_Element="_6rlzkeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6roP0OM7EeucsYN8KSeWFw" base_Element="_6rnBsOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rpd8OM7EeucsYN8KSeWFw" base_Element="_6ro24OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_6rqsEOM7EeucsYN8KSeWFw" base_Element="_6rqFAOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6rtIUOM7EeucsYN8KSeWFw" base_Element="_6rshQOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6rtIUeM7EeucsYN8KSeWFw" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6ruWcOM7EeucsYN8KSeWFw" base_Element="_6rtvYOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6ruWceM7EeucsYN8KSeWFw" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_6rvkkOM7EeucsYN8KSeWFw" base_Element="_6ru9gOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6rvkkeM7EeucsYN8KSeWFw" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_6rxZwOM7EeucsYN8KSeWFw" genericsValue="GeoDataModel" base_Element="_6rwLoOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Annotations xmi:id="_6ryA0OM7EeucsYN8KSeWFw" base_Element="_6rwLoOM7EeucsYN8KSeWFw">
+    <annotations xmi:id="_6ryA0eM7EeucsYN8KSeWFw" name="Autowired"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:StyledElement xmi:id="_6ryn4eM7EeucsYN8KSeWFw" base_Element="_6ryA0uM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tkJgOM7EeucsYN8KSeWFw" base_Element="_6ti7YOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tkwkOM7EeucsYN8KSeWFw" base_Element="_6tkJgeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tl-sOM7EeucsYN8KSeWFw" base_Element="_6tlXoOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tnM0OM7EeucsYN8KSeWFw" base_Element="_6tl-seM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tnz4OM7EeucsYN8KSeWFw" base_Element="_6tnM0eM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tpCAOM7EeucsYN8KSeWFw" base_Element="_6toa8OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tq3MOM7EeucsYN8KSeWFw" base_Element="_6tppEOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tsFUOM7EeucsYN8KSeWFw" base_Element="_6tq3MeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tuhkOM7EeucsYN8KSeWFw" base_Element="_6tssYOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tvvsOM7EeucsYN8KSeWFw" base_Element="_6tuhkeM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6twWwOM7EeucsYN8KSeWFw" base_Element="_6tvvseM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6txk4OM7EeucsYN8KSeWFw" base_Element="_6tw90OM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tyL8OM7EeucsYN8KSeWFw" base_Element="_6txk4eM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6tzaEOM7EeucsYN8KSeWFw" base_Element="_6tyzAOM7EeucsYN8KSeWFw"/>
+  <UMLLabProfile:Reference xmi:id="_6t0oMOM7EeucsYN8KSeWFw" base_Element="_6tzaEeM7EeucsYN8KSeWFw"/>
+</xmi:XMI>
