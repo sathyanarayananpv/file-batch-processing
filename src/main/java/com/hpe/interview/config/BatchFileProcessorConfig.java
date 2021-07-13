@@ -94,9 +94,7 @@ public class BatchFileProcessorConfig {
 	// CompositeWriter Bean for combining multiple writers
 	@Bean(destroyMethod = "")
 	@JobScope
-	public CompositeItemWriter<GeoDataModel> compositeWriter(StaxEventItemWriter<GeoDataModel> xmlItemWriter,
-			CustomItemWriter excelWriter, CustomItemWriter tabSeparatedText, CustomItemWriter tabSeparatedCsv,
-			FileWriterFactory fileWriterFactory) throws IllegalAccessException {
+	public CompositeItemWriter<GeoDataModel> compositeWriter(FileWriterFactory fileWriterFactory) throws IllegalAccessException {
 		CompositeItemWriter<GeoDataModel> writer = new CompositeItemWriter<>();
 		// Directly looping file type enum and invoking factory method for objects. It
 		// can also be passed from user input via JOB Parameter
